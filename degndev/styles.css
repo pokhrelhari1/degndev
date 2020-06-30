@@ -91,7 +91,19 @@ button:hover{
   text-align: center;
 }
 
+.pricing{
+  text-align: center;
+}
+
 #pricing{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center ;
+}
+
+#video{
   position: relative;
   z-index: 1;
   display: flex;
@@ -116,7 +128,7 @@ button:hover{
 }
 
 .video{
-  padding-left: 25%;
+  z-index: 1;
 }
 
 .vid{
@@ -156,4 +168,41 @@ button:hover{
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
+}
+
+
+#twitter:hover {
+  background-color: #00acee;
+}
+#web:hover{
+  background-color: transparant;
+  border: black;
+}
+
+#facebook:hover {
+  background-color: #3b5998;
+}
+
+#linkedin:hover {
+  background-color: #0e76a8;
+}
+
+#twitter {
+  background-color: #dc3545;
+  border-color: white;
+}
+
+#web{
+  background-color: #dc3545;
+  border-color: white;
+}
+
+#facebook {
+  background-color: #dc3545;
+  border-color: white;
+}
+
+#linkedin {
+  background-color: #dc3545;
+  border-color: white;
 }
