@@ -12,11 +12,25 @@
 
 <body>
   <!-- navbar start -->
+ <div id="contact mt-auto">
+   <div id="mySidenav" class="sidenav">
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+     <a href="#">About</a>
+     <a href="#">Services</a>
+     <a href="#">Clients</a>
+     <a href="#">Contact</a>
+   </div>
+
+ </div>
+
+  <!-- <div id="main">
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()"></span>
+  </div> -->
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark scrolling-navbar">
-    <a class="navbar-brand" href="#">DEGnDEV</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+      <a class="navbar-brand" href="#">DEGnDEV</a>
     <div class="collapse navbar-collapse color-black" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
@@ -38,7 +52,7 @@
           <a class="nav-link" href="#team"><span style="color:black">Team</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact"><span style="color:black">Contact</span></a>
+          <a class="nav-link" href="#contact" onclick="openNav()"><span style="color:black">Contact</span></a>
         </li>
       </ul>
     </div>
@@ -48,12 +62,13 @@
 
   <header>
     <div class="overlay">
-
-      <h1>Welcome to DEG n DEV</h1>
-      <h3>Graphics Design and Development all in one place</h3>
+      <div class="mt-5">
+        <h1>Welcome to DEG n DEV</h1>
+        <h3>Graphics Design and Development all in one place</h3>
+      </div>
       <div>
         <button class="btn1 mt-5 mx-3" type="button" name="button">GET STARTED</button>
-        <button class="btn2 mt-5 mx-3" type="button" name="button">CONTACT</button>
+        <button class="btn2 mt-5 mx-3" type="button" name="button">CONTACT US</button>
       </div>
     </div>
   </header>
@@ -69,7 +84,7 @@
       </div>
     </div>
     <div class="row m-0">
-      <div class="col-sm-5">
+      <div class="col-sm-7 col-md-6">
         <div class="video">
           <div class="mt-5">
           </div>
@@ -79,7 +94,7 @@
         </div>
       </div>
 
-      <div class="col-md-7 mt-5">
+      <div class="mt-5 col-md-6 col-sm-5">
         <h2>DEG N DEV</h2>
         <p><span class="pl-5">D</span>esign and Developer</p>
       </div>
@@ -421,7 +436,7 @@
 
   <!-- footer start -->
   <section class="effects color-white" id="footer">
-    <footer class="page-footer text-center text-md-left pt-0">
+    <footer class="footer py-4 page-footer text-center text-md-left pt-0">
       <!-- Footer Links -->
       <div class="container mt-5 mb-4 text-center text-md-left">
         <div class="row mt-3">
@@ -469,23 +484,23 @@
 
         </div>
         <!-- Footer Links -->
-
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3" id="copyright">
-          <div class="container-fluid">
-            <p class="color-white">© 2020 Designed by: DEGnDEV</p>
-          </div>
-        </div>
-      </div>
-      <!-- Copyright -->
-    </footer>
+        <!-- Footer-->
+            <div class="row align-items-center wrapper">
+              <div class="col-lg-4 text-lg-left"><a class="mr-5" id="bottom" target="_blank" href="https://www.privacypolicies.com/privacy/view/893fb3ee8aeae60e024709cc60129ae4">Privacy Policy</a>
+                <a href="https://www.privacypolicies.com/terms/view/75036647fd9e5372637dacfd9e2ace03" id="bottom" target="_blank">Terms and conditions</a></div>
+                  <div class="col-lg-4 text-lg-center">copyright @ 2020 Degndev</div>
+              <div class="col-lg-4 text-lg-right">
+                <a href="#top" id="bottomlink"><i class="fas fa-angle-double-up"></i> Go to top </a>
+              </div>
+            </div>
+        </footer>
   </section>
 
-  <!-- end of footer -->
 
+  <!-- end of footer -->
+  <script src="Degndev/script.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="degndev/jquery.hoverplay.js"></script>
-  <script src="degndev/script.js" type="text/javascript"></script>
 
   <!-- JS, Popper.js, and jQuery -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
