@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Design N Development</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="degndev/styles.css">
   <!-- <link rel="stylesheet" href="degndev/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -52,7 +53,7 @@
           <a class="nav-link" href="#team"><span style="color:black">Team</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact" onclick="openNav()"><span style="color:black">Contact</span></a>
+          <!-- <a class="nav-link" href="#contact" onclick="openNav()"><span style="color:black">Contact</span></a> -->
         </li>
       </ul>
     </div>
@@ -62,13 +63,13 @@
 
   <header>
     <div class="overlay">
-      <div class="mt-5">
-        <h1>Welcome to DEG n DEV</h1>
-        <h3>Graphics Design and Development all in one place</h3>
+      <div>
+        <p>Welcome to DEG n DEV</p>
+        <p>Graphics Design and Development all in one place</p>
       </div>
       <div>
         <button class="btn1 mt-5 mx-3" type="button" name="button">GET STARTED</button>
-        <button class="btn2 mt-5 mx-3" type="button" name="button">CONTACT US</button>
+        <button class="btn2 mt-5 mx-3" type="button" onclick="openNav()" name="button">CONTACT US</button>
       </div>
     </div>
   </header>
