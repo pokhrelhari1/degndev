@@ -50,20 +50,26 @@ a {
     display: none;
   }
 
-}
+} */
 
-@media only screen and (min-width: 2000px) {
+/* @media only screen and (min-width: 2000px) {
   .btn2{
     display: none;
   }
 
-}
+} */
 
-@media only screen and (max-width: 1500px) {
+/* @media only screen and (max-width: 1500px) {
     .btn3{
       display: none;
     }
-}
+} */
+
+
+/* <!-- ================================================================================================== --> */
+
+/*Dont touch this above*/
+
 
 @media only screen and (max-width: 600px) {
     .overlay p {
@@ -93,11 +99,8 @@ a {
     .btn3{
       display: none;
     }
-} */
+}
 
-/* <!-- ================================================================================================== --> */
-
-/*Dont touch this above*/
 
 a:hover {
     color: white;
