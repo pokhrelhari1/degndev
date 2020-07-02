@@ -206,7 +206,7 @@ p {
 #services {
     text-align: center;
     position: relative;
-    z-index: -1;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,7 +223,7 @@ p {
 #pricing {
     text-align: center;
     position: relative;
-    z-index: -1;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -245,7 +245,7 @@ p {
 #team {
     text-align: center;
     position: relative;
-    z-index: -1;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -351,7 +351,7 @@ p {
 #footer {
     text-align: center;
     position: relative;
-    z-index: -1;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
