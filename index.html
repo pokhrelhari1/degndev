@@ -2,421 +2,317 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <title>Design N Development</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="degndev/styles.css">
-  <!-- <link rel="stylesheet" href="degndev/css/bootstrap.min.css"> -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta charset="utf-8">
+<title>Design N Development</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="degndev/styles.css">
+<link rel="stylesheet" href="degndev/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
+<div id="main">
+<nav class="navbar navbar-expand-lg fixed-top navbar-dark scrolling-navbar">
+  <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">DEGnDEV</a>
+  <div class="collapse navbar-collapse color-black" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#"><span style="color:black">Home</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#aboutus"><span style="color:black">About us</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#services"><span style="color:black">Services</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#portfolio"><span style="color:black">Portfolio</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#pricing"><span style="color:black">Pricing</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#team"><span style="color:black">Team</span></a>
+      </li>
+      <!-- <li class="nav-item">
+        <button class="btn btn-outline-danger my-2 my-sm-0 btn3">login</button>
+     </li> -->
+    </ul>
+  </div>
+</nav>
+<!-- navbar end -->
 
-  <!-- /*Dont touch this*/ -->
-<!-- ================================================================================================== -->
-  <!-- navbar start -->
- <!-- <div id="contact mt-auto">
-   <div id="mySidenav" class="sidenav">
-     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-     <h4>Message Us</h4>
+<header>
+  <div class="">
+    <div class="overlay parallax">
+      <div class="mt-5">
+        <p>Welcome to DEG n DEV</p>
+        <p>Graphics Design and Development all in one place</h3>
+      </div>
+      <div>
+        <a href="#aboutus"><button class="btn1 mt-5 mx-3" type="button" name="button">GET STARTED</button></a>
+        <button class="btn2 mt-5 mx-3" type="button" data-toggle="modal" data-target="#contact" name="button">CONTACT US</button>
+        <!--yesma onclick="openNav1()"-->
+      </div>
+    </div>
+  </div>
+</header>
 
-     <div class="container">
-       <form action="">
-         <label for="fname">FirstName</label>
-         <input type="text" id="fname" name="firstname" placeholder="Your name..">
+<!-- about us start -->
 
-         <label for="lname">Last Name</label>
-         <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+<section>
+  <div class="aboutus" id="aboutus">
+    <div class="mt-5">
+      <div class="mt-5">
+        <h1>ABOUT US</h1>
+      </div>
+    </div>
+  </div>
+  <div class="row m-0">
+    <div class="col-sm-7 col-md-6">
+      <div class="video">
+        <div class="mt-5">
+        </div>
+        <video class="vid" controls data-play="hover" muted="muted" height="auto" width="50%">
+          <source src="degndev/video.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
 
-         <label for="country">Country</label>
-         <select id="country" name="country">
-           <option value="australia">Australia</option>
-           <option value="canada">Canada</option>
-           <option value="usa">USA</option>
-         </select>
+    <div class="mt-5 col-md-6 col-sm-5">
+      <h2>DEG N DEV</h2>
+      <p><span class="pl-5">D</span>esign and Developer</p>
+    </div>
+  </div>
+</section>
+<br>
+<br>
+<br>
 
-         <label for="subject">Subject</label>
-         <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+<!-- about us end -->
 
-         <input type="submit" value="Submit">
-       </form>
-     </div>
-   </div>
+<!-- services start -->
+<div class="effects" id="services">
+  <div class="container">
+    <div class="mt-5 mb-5">
+      <h1 class="color-white">SERVICES</h1>
+    </div>
+    <br>
+    <div class="row mb-5">
 
- </div> -->
+      <!-- Grid column -->
+      <div class="col-md-12 col-lg-6">
 
- <!--Form small screen  start-->
- <!-- <div id="myNav" class="overlay1">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
-  <div class="overlay-content1">
-    <h4>Message Us</h4>
+        <!-- Grid row -->
+        <div class="row mb-5">
+          <div class="col-2">
+            <a type="button" class="btn-floating white btn-lg my-0 waves-effect waves-light">
+              <span class="color-white"><i class="fa fa-pencil-square-o fa-3x" aria-hidden="true"></i></span>
+            </a>
+          </div>
+          <div class="col-9 pl-5">
+            <h4 class="font-weight-bold white-text">Graphics Design</h4>
+            <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+              maiores.</p>
+          </div>
+        </div>
+        <!-- Grid row -->
 
-    <div class="container">
-      <form action="">
-        <label for="fname">FirstName</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <!-- Grid row -->
+        <div class="row mb-5">
+          <div class="col-2">
+            <a type="button" class="btn-floating white btn-lg my-0 waves-effect waves-light">
+              <span class="color-white"><i class="fa fa-file-code-o fa-3x" aria-hidden="true"></i></span>
+            </a>
+          </div>
+          <div class="col-9 pl-5">
+            <h4 class="font-weight-bold white-text">Web Development</h4>
+            <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+              maiores.</p>
+          </div>
+        </div>
+        <!-- Grid row -->
 
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <!-- Grid row -->
+        <div class="row mb-5">
+          <div class="col-2">
+            <a type="button" class="btn-floating white btn-lg my-0 waves-effect waves-light">
+              <span class="color-white"><i class="fa fa-android fa-3x" aria-hidden="true"></i></span>
+            </a>
+          </div>
+          <div class="col-9 pl-5">
+            <h4 class="font-weight-bold white-text">Android Development</h4>
+            <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+              maiores nam.
+            </p>
+          </div>
+        </div>
+        <!-- Grid row -->
 
-        <label for="country">Country</label>
-        <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="usa">USA</option>
-        </select>
+      </div>
+      <!-- Grid column -->
 
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      <!-- Grid column -->
+      <div class="col-md-12 col-lg-6">
 
-        <input type="submit" value="Submit">
-      </form>
+        <!-- Grid row -->
+        <div class="row mb-5">
+          <div class="col-2">
+            <a type="button" class="btn-floating white btn-lg my-0 waves-effect waves-light">
+              <span class="color-white"><i class="fa fa-laptop fa-3x" aria-hidden="true"></i></span>
+            </a>
+          </div>
+          <div class="col-9 pl-5">
+            <h4 class="font-weight-bold white-text">Web Design</h4>
+            <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+              maiores nam.
+            </p>
+          </div>
+        </div>
+        <!-- Grid row -->
+
+        <!-- Grid row -->
+        <div class="row mb-5">
+          <div class="col-2">
+            <a type="button" class="btn-floating white btn-lg my-0 waves-effect waves-light">
+              <span class="color-white"><i class="fa fa-cogs fa-3x" aria-hidden="true"></i></span>
+            </a>
+          </div>
+          <div class="col-9 pl-5">
+            <h4 class="font-weight-bold white-text">Monthly Maintainance</h4>
+            <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+              maiores nam.
+            </p>
+          </div>
+        </div>
+        <!-- Grid row -->
+
+        <!-- Grid row -->
+        <div class="row mb-5">
+          <div class="col-2">
+            <a type="button" class="btn-floating white btn-lg my-0 waves-effect waves-light">
+              <span class="color-white"><i class="fa fa-rocket fa-3x" aria-hidden="true"></i></span>
+            </a>
+          </div>
+          <div class="col-9 pl-5">
+            <h4 class="font-weight-bold white-text">24x7 Support</h4>
+            <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
+              maiores nam.
+            </p>
+          </div>
+        </div>
+        <!-- Grid row -->
+
+      </div>
+      <!-- Grid column -->
+
     </div>
   </div>
 </div>
- -->
 
-<!--Form small screen  end-->
+<!-- services end -->
 
-<!-- ================================================================================================== -->
+<!-- portfolio start -->
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <div class="mt-5">
+      <h1>PORTFOLIO</h1>
+    </div>
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
+              </svg>
+              <div class="card-body">
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+</section>
 
-<!-- /*Dont touch this above*/ -->
-
-   <div id="main">
-     <nav class="navbar navbar-expand-lg fixed-top navbar-dark scrolling-navbar">
-       <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-         <span class="navbar-toggler-icon"></span>
-       </button>
-         <a class="navbar-brand" href="#">DEGnDEV</a>
-       <div class="collapse navbar-collapse color-black" id="navbarNav">
-         <ul class="navbar-nav ml-auto">
-           <li class="nav-item">
-             <a class="nav-link" href="#"><span style="color:black">Home</span></a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="#aboutus"><span style="color:black">About us</span></a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="#services"><span style="color:black">Services</span></a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="#portfolio"><span style="color:black">Portfolio</span></a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="#pricing"><span style="color:black">Pricing</span></a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="#team"><span style="color:black">Team</span></a>
-           </li>
-           <li class="nav-item">
-              <button class="btn btn-outline-danger my-2 my-sm-0 btn3">Contact Us</button> <!--yesma onclick="openNav()"-->
-           </li>
-         </ul>
-       </div>
-     </nav>
-
-     <!-- navbar end -->
-
-     <header>
-       <div class="overlay">
-         <div class="mt-5">
-           <p>Welcome to DEG n DEV</p>
-           <p>Graphics Design and Development all in one place</h3>
-         </div>
-         <div>
-           <a href="#aboutus"><button class="btn1 mt-5 mx-3" type="button" name="button">GET STARTED</button></a>
-           <button class="btn2 mt-5 mx-3" type="button" data-toggle="modal" data-target="#contact" name="button">CONTACT US</button>   <!--yesma onclick="openNav1()"-->
-         </div>
-       </div>
-     </header>
-
-     <!-- about us start -->
-
-     <section>
-       <div class="aboutus" id="aboutus">
-         <div class="mt-5">
-           <div class="mt-5">
-             <h1>ABOUT US</h1>
-           </div>
-         </div>
-       </div>
-       <div class="row m-0">
-         <div class="col-sm-7 col-md-6">
-           <div class="video">
-             <div class="mt-5">
-             </div>
-             <video class="vid" controls data-play="hover" muted="muted" height="auto" width="50%">
-               <source src="degndev/video.mp4" type="video/mp4">
-             </video>
-           </div>
-         </div>
-
-         <div class="mt-5 col-md-6 col-sm-5">
-           <h2>DEG N DEV</h2>
-           <p><span class="pl-5">D</span>esign and Developer</p>
-         </div>
-       </div>
-     </section>
-     <br>
-     <br>
-     <br>
+<!-- end portfolio -->
 
 
-     <!-- about us end -->
+<!-- pricing start -->
 
-     <!-- services start -->
-     <div class="effects" id="services">
-       <div class="container">
-         <div class="mt-5 mb-5">
-           <h1 class="color-white">SERVICES</h1>
-         </div>
-         <br>
-         <div class="row mb-5">
-
-           <!-- Grid column -->
-           <div class="col-md-12 col-lg-6">
-
-             <!-- Grid row -->
-             <div class="row mb-5">
-               <div class="col-2">
-                 <a type="button" class="btn-floating white btn-lg my-0 waves-effect waves-light">
-                   <span class="color-white"><i class="fa fa-pencil-square-o fa-3x" aria-hidden="true"></i></span>
-                 </a>
-               </div>
-               <div class="col-9 pl-5">
-                 <h4 class="font-weight-bold white-text">Graphics Design</h4>
-                 <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
-                   maiores.</p>
-               </div>
-             </div>
-             <!-- Grid row -->
-
-             <!-- Grid row -->
-             <div class="row mb-5">
-               <div class="col-2">
-                 <a type="button" class="btn-floating white btn-lg my-0 waves-effect waves-light">
-                   <span class="color-white"><i class="fa fa-file-code-o fa-3x" aria-hidden="true"></i></span>
-                 </a>
-               </div>
-               <div class="col-9 pl-5">
-                 <h4 class="font-weight-bold white-text">Web Development</h4>
-                 <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
-                   maiores.</p>
-               </div>
-             </div>
-             <!-- Grid row -->
-
-             <!-- Grid row -->
-             <div class="row mb-5">
-               <div class="col-2">
-                 <a type="button" class="btn-floating white btn-lg my-0 waves-effect waves-light">
-                   <span class="color-white"><i class="fa fa-android fa-3x" aria-hidden="true"></i></span>
-                 </a>
-               </div>
-               <div class="col-9 pl-5">
-                 <h4 class="font-weight-bold white-text">Android Development</h4>
-                 <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
-                   maiores nam.
-                 </p>
-               </div>
-             </div>
-             <!-- Grid row -->
-
-           </div>
-           <!-- Grid column -->
-
-           <!-- Grid column -->
-           <div class="col-md-12 col-lg-6">
-
-             <!-- Grid row -->
-             <div class="row mb-5">
-               <div class="col-2">
-                 <a type="button" class="btn-floating white btn-lg my-0 waves-effect waves-light">
-                   <span class="color-white"><i class="fa fa-laptop fa-3x" aria-hidden="true"></i></span>
-                 </a>
-               </div>
-               <div class="col-9 pl-5">
-                 <h4 class="font-weight-bold white-text">Web Design</h4>
-                 <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
-                   maiores nam.
-                 </p>
-               </div>
-             </div>
-             <!-- Grid row -->
-
-             <!-- Grid row -->
-             <div class="row mb-5">
-               <div class="col-2">
-                 <a type="button" class="btn-floating white btn-lg my-0 waves-effect waves-light">
-                   <span class="color-white"><i class="fa fa-cogs fa-3x" aria-hidden="true"></i></span>
-                 </a>
-               </div>
-               <div class="col-9 pl-5">
-                 <h4 class="font-weight-bold white-text">Monthly Maintainance</h4>
-                 <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
-                   maiores nam.
-                 </p>
-               </div>
-             </div>
-             <!-- Grid row -->
-
-             <!-- Grid row -->
-             <div class="row mb-5">
-               <div class="col-2">
-                 <a type="button" class="btn-floating white btn-lg my-0 waves-effect waves-light">
-                   <span class="color-white"><i class="fa fa-rocket fa-3x" aria-hidden="true"></i></span>
-                 </a>
-               </div>
-               <div class="col-9 pl-5">
-                 <h4 class="font-weight-bold white-text">24x7 Support</h4>
-                 <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit
-                   maiores nam.
-                 </p>
-               </div>
-             </div>
-             <!-- Grid row -->
-
-           </div>
-           <!-- Grid column -->
-
-         </div>
-       </div>
-     </div>
-
-     <!-- services end -->
-
-     <!-- portfolio start -->
-     <section class="portfolio" id="portfolio">
-       <div class="container">
-         <div class="mt-5">
-           <h1>PORTFOLIO</h1>
-         </div>
-         <div class="album py-5 bg-light">
-           <div class="container">
-             <div class="row">
-               <div class="col-md-4">
-                 <div class="card mb-4 shadow-sm">
-                   <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                     <title>Placeholder</title>
-                     <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                   </svg>
-                   <div class="card-body">
-                     <p class="card-text"></p>
-                   </div>
-                 </div>
-               </div>
-               <div class="col-md-4">
-                 <div class="card mb-4 shadow-sm">
-                   <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                     <title>Placeholder</title>
-                     <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                   </svg>
-                   <div class="card-body">
-                     <p class="card-text"></p>
-                   </div>
-                 </div>
-               </div>
-               <div class="col-md-4">
-                 <div class="card mb-4 shadow-sm">
-                   <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                     <title>Placeholder</title>
-                     <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                   </svg>
-                   <div class="card-body">
-                     <p class="card-text"></p>
-                   </div>
-                 </div>
-               </div>
-
-               <div class="col-md-4">
-                 <div class="card mb-4 shadow-sm">
-                   <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                     <title>Placeholder</title>
-                     <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                   </svg>
-                   <div class="card-body">
-                     <p class="card-text"></p>
-                   </div>
-                 </div>
-               </div>
-               <div class="col-md-4">
-                 <div class="card mb-4 shadow-sm">
-                   <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                     <title>Placeholder</title>
-                     <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                   </svg>
-                   <div class="card-body">
-                     <p class="card-text"></p>
-                   </div>
-                 </div>
-               </div>
-               <div class="col-md-4">
-                 <div class="card mb-4 shadow-sm">
-                   <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
-                     <title>Placeholder</title>
-                     <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                   </svg>
-                   <div class="card-body">
-                     <p class="card-text"></p>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-       <br>
-       <br>
-     </section>
-
-     <!-- end portfolio -->
-
-
-     <!-- pricing start -->
-
- <section class="effects" id="pricing">
-   <div class="container">
-     <div class="mt-5">
-       <h1 class="mt-5 mb-5 color-white">PRICING</h1>
-     </div>
-     <div class="container">
-       <div class="card-deck mb-3 text-center">
-         <div class="card mb-4 shadow-sm">
-           <div class="color-gold">
-             <div class="card-header">
-               <h4 class="my-0 font-weight-normal">GOLD</h4>
-             </div>
-             <div class="card-body">
-               <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
-               <ul class="list-unstyled mt-3 mb-4">
-                 <li>10 users included</li>
-                 <li>2 GB of storage</li>
-                 <li>Email support</li>
-                 <li>Help center access</li>
-               </ul>
-                <button type="button" data-toggle="modal" data-target="#gold" class="btn btn-lg btn-block btn-primary">Get started</button>
-                </div>
-           </div>
-         </div>
-         <div class="card mb-4 shadow-sm">
-           <div class="color-diamond">
-             <div class="card-header">
-               <h4 class="my-0 font-weight-normal">DIAMOND</h4>
-             </div>
-             <div class="card-body">
-               <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
-               <ul class="list-unstyled mt-3 mb-4">
-                 <li>20 users included</li>
-                 <li>10 GB of storage</li>
-                 <li>Priority email support</li>
-                 <li>Help center access</li>
-               </ul>
-               <button type="button" data-toggle="modal" data-target="#diamond" class="btn btn-lg btn-block btn-primary">Get started</button>
-             </div>
-           </div>
-         </div>
-         <div class="card mb-4 shadow-sm">
+<section class="effects" id="pricing">
+  <div class="container">
+    <div class="mt-5">
+      <h1 class="mt-5 mb-5 color-white">PRICING</h1>
+    </div>
+    <div class="container">
+      <div class="card-deck mb-3 text-center">
+        <div class="card mb-4 shadow-sm">
+          <div class="color-gold">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">GOLD</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>10 users included</li>
+                <li>2 GB of storage</li>
+                <li>Email support</li>
+                <li>Help center access</li>
+              </ul>
+              <button type="button" data-toggle="modal" data-target="#gold" class="btn btn-lg btn-block btn-primary">Get started</button>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
+          <div class="color-diamond">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">DIAMOND</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>20 users included</li>
+                <li>10 GB of storage</li>
+                <li>Priority email support</li>
+                <li>Help center access</li>
+              </ul>
+              <button type="button" data-toggle="modal" data-target="#diamond" class="btn btn-lg btn-block btn-primary">Get started</button>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-4 shadow-sm">
           <div class="color-platinum">
             <div class="card-header">
               <h4 class="my-0 font-weight-normal">PLATINUM</h4>
@@ -429,19 +325,19 @@
                 <li>Phone and email support</li>
                 <li>Help center access</li>
               </ul>
-            <button type="button" data-toggle="modal" data-target="#platinum" class="btn btn-lg btn-block btn-primary">Get started</button>
+              <button type="button" data-toggle="modal" data-target="#platinum" class="btn btn-lg btn-block btn-primary">Get started</button>
             </div>
           </div>
-         </div>
-       </div>
-     </div>
- </section>
+        </div>
+      </div>
+    </div>
+</section>
 
-     <!-- pricing end -->
+<!-- pricing end -->
 
-    <!-- pricing modal -->
+<!-- pricing modal -->
 
-    <!-- gold modal start -->
+<!-- gold modal start -->
 <div id="gold" class="modal fade" role="dialog">
   <div class="modal-dialog modal-lg" role="content">
     <!-- Modal content-->
@@ -587,65 +483,65 @@
 
 <!-- platinum modal end -->
 
-    <!-- pricing modal end -->
+<!-- pricing modal end -->
 
-     <!-- team start -->
-     <section class="team" id="team">
-       <div class="container">
-         <div class="container marketing">
-           <div class="mt-5">
-             <h1 class="mb-5 mt-5">OUR TEAM</h1>
-             <!-- Three columns of text below the carousel -->
-             <div class="row">
-               <div class="col-lg-4">
-                 <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
-                   <title>Placeholder</title>
-                   <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-                 </svg>
-                 <h2>Ashutosh Acharya</h2>
-                 <p>Web Designer & Developer</p>
-                 <div>
-                   <a class="btn btn-dark btn-social mx-1" id="linkedin" href="https://www.linkedin.com/in/ashutosh-acharya-73a2a11a1/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                   <a class="btn btn-dark btn-social mx-1" id="facebook" href="https://www.facebook.com/JakAcharya/" target="_blank"><i class="fa fa-facebook"></i></a>
-                   <a class="btn btn-dark btn-social mx-1" id="twitter" href="https://twitter.com/Ashutos90461529/" target="_blank"><i class="fa fa-twitter"></i></a>
-                   <a class="btn btn-dark btn-social mx-1" id="web" href="https://ashutoshjak.github.io/ashutoshjak/" target="_blank"><i class="fa fa-globe"></i></a>
-                 </div><br>
-               </div><!-- /.col-lg-4 -->
-               <div class="col-lg-4">
-                 <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
-                   <title>Placeholder</title>
-                   <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-                 </svg>
-                 <h2>Hari Pokhrel</h2>
-                 <p>Graphics Designer & Web Developer</p>
-                 <div>
-                   <a class="btn btn-dark btn-social" id="linkedin" href="https://www.linkedin.com/in/pokhrelhari1/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                   <a class="btn btn-dark btn-social mx-1" id="facebook" href="https://www.facebook.com/haripokhrel15/" target="_blank"><i class="fa fa-facebook"></i></a>
-                   <a class="btn btn-dark btn-social mx-1" id="twitter" href="https://twitter.com/pokhrelhari1/" target="_blank"><i class="fa fa-twitter"></i></a>
-                   <a class="btn btn-dark btn-social mx-1" id="web" href="https://pokhrelhari1.github.io/" target="_blank"><i class="fa fa-globe"></i></a>
-                 </div><br>
-               </div><!-- /.col-lg-4 -->
-               <div class="col-lg-4">
-                 <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
-                   <title>Placeholder</title>
-                   <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-                 </svg>
-                 <h2>Manie Raj Bhuju</h2>
-                 <p>Web Designer & Developer</p>
-                 <div>
-                   <a class="btn btn-dark btn-social mx-1" id="linkedin" href="https://www.linkedin.com/in/mani-bhuju/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                   <a class="btn btn-dark btn-social mx-1" id="facebook" href="https://www.facebook.com/m.r.bhuju/" target="_blank"><i class="fa fa-facebook"></i></a>
-                   <a class="btn btn-dark btn-social mx-1" id="twitter" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
-                   <a class="btn btn-dark btn-social mx-1" id="web" href="https://pokhrelhari1.github.io/degndev/" target="_blank"><i class="fa fa-globe"></i></a>
-                 </div><br>
-               </div><!-- /.col-lg-4 -->
-             </div><!-- /.row -->
-           </div>
-         </div>
-         <br>
-         <br>
-     </section>
-     <!-- team end -->
+<!-- team start -->
+<section class="team" id="team">
+  <div class="container">
+    <div class="container marketing">
+      <div class="mt-5">
+        <h1 class="mb-5 mt-5">OUR TEAM</h1>
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+            </svg>
+            <h2>Ashutosh Acharya</h2>
+            <p>Web Designer & Developer</p>
+            <div>
+              <a class="btn btn-dark btn-social mx-1" id="linkedin" href="https://www.linkedin.com/in/ashutosh-acharya-73a2a11a1/" target="_blank"><i class="fa fa-linkedin"></i></a>
+              <a class="btn btn-dark btn-social mx-1" id="facebook" href="https://www.facebook.com/JakAcharya/" target="_blank"><i class="fa fa-facebook"></i></a>
+              <a class="btn btn-dark btn-social mx-1" id="twitter" href="https://twitter.com/Ashutos90461529/" target="_blank"><i class="fa fa-twitter"></i></a>
+              <a class="btn btn-dark btn-social mx-1" id="web" href="https://ashutoshjak.github.io/ashutoshjak/" target="_blank"><i class="fa fa-globe"></i></a>
+            </div><br>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+            </svg>
+            <h2>Hari Pokhrel</h2>
+            <p>Graphics Designer & Web Developer</p>
+            <div>
+              <a class="btn btn-dark btn-social" id="linkedin" href="https://www.linkedin.com/in/pokhrelhari1/" target="_blank"><i class="fa fa-linkedin"></i></a>
+              <a class="btn btn-dark btn-social mx-1" id="facebook" href="https://www.facebook.com/haripokhrel15/" target="_blank"><i class="fa fa-facebook"></i></a>
+              <a class="btn btn-dark btn-social mx-1" id="twitter" href="https://twitter.com/pokhrelhari1/" target="_blank"><i class="fa fa-twitter"></i></a>
+              <a class="btn btn-dark btn-social mx-1" id="web" href="https://pokhrelhari1.github.io/" target="_blank"><i class="fa fa-globe"></i></a>
+            </div><br>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
+              <title>Placeholder</title>
+              <rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
+            </svg>
+            <h2>Manie Raj Bhuju</h2>
+            <p>Web Designer & Developer</p>
+            <div>
+              <a class="btn btn-dark btn-social mx-1" id="linkedin" href="https://www.linkedin.com/in/mani-bhuju/" target="_blank"><i class="fa fa-linkedin"></i></a>
+              <a class="btn btn-dark btn-social mx-1" id="facebook" href="https://www.facebook.com/m.r.bhuju/" target="_blank"><i class="fa fa-facebook"></i></a>
+              <a class="btn btn-dark btn-social mx-1" id="twitter" href="#" target="_blank"><i class="fa fa-twitter"></i></a>
+              <a class="btn btn-dark btn-social mx-1" id="web" href="https://pokhrelhari1.github.io/degndev/" target="_blank"><i class="fa fa-globe"></i></a>
+            </div><br>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+      </div>
+    </div>
+    <br>
+    <br>
+</section>
+<!-- team end -->
 
 <!-- message modal -->
 <a href="#" data-toggle="modal" data-target="#contact" class="float">
@@ -656,7 +552,7 @@
   <div class="modal-dialog modal-lg" role="content">
     <!-- Modal content-->
     <div class="modal-content">
-      <div class="modal-header">
+      <div class="modal-header contact-title">
         <h4 class="modal-title">CONTACT US </h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
@@ -675,7 +571,7 @@
                   <!--Grid column-->
                   <div class="col-md-6">
                     <div class="md-form mb-0">
-                      <input type="text" id="name" name="name" class="form-control">
+                      <input type="text" id="name" name="name" class="form-control1">
                       <label for="name" class="">Your name</label>
                     </div>
                   </div>
@@ -684,7 +580,7 @@
                   <!--Grid column-->
                   <div class="col-md-6">
                     <div class="md-form mb-0">
-                      <input type="text" id="email" name="email" class="form-control">
+                      <input type="text" id="email" name="email" class="form-control1">
                       <label for="email" class="">Your email</label>
                     </div>
                   </div>
@@ -697,7 +593,7 @@
                 <div class="row">
                   <div class="col-md-12">
                     <div class="md-form mb-0">
-                      <input type="text" id="subject" name="subject" class="form-control">
+                      <input type="text" id="subject" name="subject" class="form-control1">
                       <label for="subject" class="">Subject</label>
                     </div>
                   </div>
@@ -711,7 +607,7 @@
                   <div class="col-md-12">
 
                     <div class="md-form">
-                      <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                      <textarea type="text" id="message" name="message" rows="2" class="form-control1 md-textarea"></textarea>
                       <label for="message">Your message</label>
                     </div>
 
@@ -720,8 +616,9 @@
                 <!--Grid row-->
 
               </form>
-              <div class="text-center text-md-left">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+              <div class="text-center text-md-center">
+                <a><button class="btn4 mt-5 mx-3" type="button" name="button" onclick="validateForm()" onclick="document.getElementById('contact-form').submit();">SEND</button></a>
+                <a><button class="btn5 mt-5 mx-3" type="button" name="button" onclick="document.getElementById('contact-form').reset();">CLEAR</button></a>
               </div>
               <div class="status"></div>
             </div>
@@ -730,16 +627,16 @@
             <!--Grid column-->
             <div class="col-md-3 text-center">
               <ul class="list-unstyled mb-0">
-                <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                  <p>San Francisco, CA 94126, USA</p>
+                <li><i class="fa fa-map fa-lg"></i>
+                  <p>Kathmandu 44600, NEPAL</p>
                 </li>
 
-                <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                  <p>+ 01 234 567 89</p>
+                <li><i class="fa fa-phone mt-4 fa-lg"></i>
+                  <p>+977-(xxxxxxxxxx)</p>
                 </li>
 
-                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                  <p>contact@mdbootstrap.com</p>
+                <li><i class="fa fa-envelope mt-4 fa-lg"></i>
+                  <p>degndev@gmail.com</p>
                 </li>
               </ul>
             </div>
@@ -753,77 +650,75 @@
 </div>
 <!-- message modal end -->
 
-     <!-- footer start -->
-     <section class="effects color-white" id="footer">
-       <footer class="footer py-4 page-footer text-center text-md-left pt-0">
-         <!-- Footer Links -->
-         <div class="container mt-5 mb-4 text-center text-md-left">
-           <div class="row mt-3">
-             <!-- First column -->
-             <div class="col-md-3 col-lg-4 col-xl-3 mb-5">
-               <h3><strong>DEG n DEV</strong> </h3>
-               <hr class="pink accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-               <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet,
-                 consectetur
-                 adipisicing elit.</p>
-             </div>
-             <!-- First column -->
+<!-- footer start -->
+<section class="effects color-white" id="footer">
+  <footer class="footer py-4 page-footer text-center text-md-left pt-0">
+    <!-- Footer Links -->
+    <div class="container mt-5 mb-4 text-center text-md-left">
+      <div class="row mt-3">
+        <!-- First column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mb-5">
+          <h3><strong>DEG n DEV</strong> </h3>
+          <hr class="pink accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet,
+            consectetur
+            adipisicing elit.</p>
+        </div>
+        <!-- First column -->
 
-             <!-- Third column -->
-             <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-5">
-               <hr class="pink accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-               <p>
-                 <a href="#!">Your Account</a>
-               </p>
-               <p>
-                 <a href="#!">Become an Affiliate</a>
-               </p>
-               <p>
-                 <a href="#!">Shipping Rates</a>
-               </p>
-               <p>
-                 <a href="#!">Help</a>
-               </p>
-             </div>
-             <!-- Third column -->
+        <!-- Third column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-5">
+          <hr class="pink accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a class="f-link" href="#!">Your Account</a>
+          </p>
+          <p>
+            <a class="f-link" href="#!">Become an Affiliate</a>
+          </p>
+          <p>
+            <a class="f-link" href="#!">Shipping Rates</a>
+          </p>
+          <p>
+            <a class="f-link" href="#!">Help</a>
+          </p>
+        </div>
+        <!-- Third column -->
 
-             <!-- Fourth column -->
-             <div class="col-md-4 col-lg-3 col-xl-3">
-               <hr class="pink accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-               <p>
-                 <i class="fa fa-home mr-3"></i> New York, NY 10012, US</p>
-               <p>
-                 <i class="fa fa-envelope mr-3"></i> info@example.com</p>
-               <p>
-                 <i class="fa fa-phone mr-3"></i> + 01 234 567 88</p>
-               <p>
-                 <i class="fa fa-print mr-3"></i> + 01 234 567 89</p>
-             </div>
-             <!-- Fourth column -->
-           </div>
-           <!-- Footer Links -->
-           <!-- Footer-->
-               <div class="row align-items-center wrapper">
-                 <div class="col-lg-4 text-lg-left"><a class="mr-5" id="bottom" target="_blank" href="https://www.privacypolicies.com/privacy/view/893fb3ee8aeae60e024709cc60129ae4">Privacy Policy</a>
-                   <a href="https://www.privacypolicies.com/terms/view/75036647fd9e5372637dacfd9e2ace03" id="bottom" target="_blank">Terms and conditions</a></div>
-                     <div class="col-lg-4 text-lg-center">copyright @ 2020 Degndev</div>
-                 <div class="col-lg-4 text-lg-right">
-                   <a href="#main" id="bottomlink"><i class="fa fa-angle-double-up"></i> Go to top </a>
-                 </div>
-               </div>
-           </footer>
-     </section>
-  </div>
+        <!-- Fourth column -->
+        <div class="col-md-4 col-lg-3 col-xl-3">
+          <hr class="pink accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fa fa-map-marker fa-lg mr-3"></i> Kathmandu - 44600, NEPAL</p>
+          <p>
+            <i class="fa fa-envelope fa-md mr-3"></i> degndev@gmail.com</p>
+          <p>
+            <i class="fa fa-phone fa-lg mr-3"></i> (+977) - </p>
+        </div>
+        <!-- Fourth column -->
+      </div>
+      <!-- Footer Links -->
+      <!-- Footer-->
+      <div class="row align-items-center wrapper">
+        <div class="col-lg-4 text-lg-left"><a class="mr-5 f-link" id="bottom" target="_blank" href="https://www.privacypolicies.com/privacy/view/893fb3ee8aeae60e024709cc60129ae4">Privacy Policy</a>
+          <a class="f-link" href="https://www.privacypolicies.com/terms/view/75036647fd9e5372637dacfd9e2ace03" id="bottom" target="_blank">Terms and conditions</a></div>
+        <div class="col-lg-4 text-lg-center">&#169;copyright @ 2020 Degndev</div>
+        <div class="col-lg-4 text-lg-right">
+          <a class="f-link" href="#main" id="bottomlink"><i class="fa fa-angle-double-up"></i> Go to top </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</section>
 
-  <!-- end of footer -->
-  <script src="Degndev/script.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="degndev/jquery.hoverplay.js"></script>
+<!-- end of footer -->
+<script src="Degndev/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="degndev/jquery.hoverplay.js"></script>
 
-  <!-- JS, Popper.js, and jQuery -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 
 </html>

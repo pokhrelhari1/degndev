@@ -11,30 +11,36 @@
   })();
 // <!-- video js end -->
 
-/*Dont touch this*/
-// ====================================================================
-// sidenav
-// function openNav() {
-//   document.getElementById("mySidenav").style.width = "300px";
-//   document.getElementById("main").style.marginLeft = "300px";
-//
-// }
-//
-// function closeNav() {
-//   document.getElementById("mySidenav").style.width = "0";
-//   document.getElementById("main").style.marginLeft= "0";
-//   document.body.style.backgroundColor = "white";
-// }
-//
-// //form small screen
-//
-// function openNav1() {
-//   document.getElementById("myNav").style.width = "100%";
-// }
-//
-// function closeNav1() {
-//   document.getElementById("myNav").style.width = "0%";
-// }
-// ========================================================================
 
-/*Dont touch this above*/
+
+
+// form validation
+function validateForm() {
+  var name =  document.getElementById('name').value;
+  if (name == "") {
+      document.querySelector('.status').innerHTML = "Name cannot be empty";
+      return false;
+  }
+  var email =  document.getElementById('email').value;
+  if (email == "") {
+      document.querySelector('.status').innerHTML = "Email cannot be empty";
+      return false;
+  } else {
+      var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      if(!re.test(email)){
+          document.querySelector('.status').innerHTML = "Email format invalid";
+          return false;
+      }
+  }
+  var subject =  document.getElementById('subject').value;
+  if (subject == "") {
+      document.querySelector('.status').innerHTML = "Subject cannot be empty";
+      return false;
+  }
+  var message =  document.getElementById('message').value;
+  if (message == "") {
+      document.querySelector('.status').innerHTML = "Message cannot be empty";
+      return false;
+  }
+  document.querySelector('.status').innerHTML = "Sending...";
+}
