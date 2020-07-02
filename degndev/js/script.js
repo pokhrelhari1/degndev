@@ -12,8 +12,6 @@
 // <!-- video js end -->
 
 
-
-
 // form validation
 function validateForm() {
   var name =  document.getElementById('name').value;
