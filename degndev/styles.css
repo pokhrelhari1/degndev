@@ -33,7 +33,7 @@ li,
 a {
     font-family: "Comic Neue", sans-serif;
     font-weight: 500;
-    font-size: 18px;
+    /* font-size: 18px; */
     text-decoration: none;
 }
 
