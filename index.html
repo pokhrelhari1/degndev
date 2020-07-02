@@ -12,15 +12,18 @@
 </head>
 
 <body>
+
+  <!-- /*Dont touch this*/ -->
+<!-- ================================================================================================== -->
   <!-- navbar start -->
- <div id="contact mt-auto">
+ <!-- <div id="contact mt-auto">
    <div id="mySidenav" class="sidenav">
      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
      <h4>Message Us</h4>
 
      <div class="container">
-       <form action="/action_page.php">
-         <label for="fname">First Name</label>
+       <form action="">
+         <label for="fname">FirstName</label>
          <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
          <label for="lname">Last Name</label>
@@ -41,7 +44,44 @@
      </div>
    </div>
 
- </div>
+ </div> -->
+
+ <!--Form small screen  start-->
+ <!-- <div id="myNav" class="overlay1">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+  <div class="overlay-content1">
+    <h4>Message Us</h4>
+
+    <div class="container">
+      <form action="">
+        <label for="fname">FirstName</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+ -->
+
+<!--Form small screen  end-->
+
+<!-- ================================================================================================== -->
+
+<!-- /*Dont touch this above*/ -->
 
    <div id="main">
      <nav class="navbar navbar-expand-lg fixed-top navbar-dark scrolling-navbar">
@@ -70,7 +110,7 @@
              <a class="nav-link" href="#team"><span style="color:black">Team</span></a>
            </li>
            <li class="nav-item">
-             <!-- <a class="nav-link" href="#contact" onclick="openNav()"><span style="color:black">Contact</span></a> -->
+              <button class="btn btn-outline-danger my-2 my-sm-0 btn3">Contact Us</button> <!--yesma onclick="openNav()"-->
            </li>
          </ul>
        </div>
@@ -85,8 +125,8 @@
            <p>Graphics Design and Development all in one place</h3>
          </div>
          <div>
-           <button class="btn1 mt-5 mx-3" type="button" name="button">GET STARTED</button>
-           <button class="btn2 mt-5 mx-3" type="button" onclick="openNav()" name="button">CONTACT US</button>
+           <a href="#aboutus"><button class="btn1 mt-5 mx-3" type="button" name="button">GET STARTED</button></a>
+           <button class="btn2 mt-5 mx-3" type="button"  name="button">CONTACT US</button>   <!--yesma onclick="openNav1()"-->
          </div>
        </div>
      </header>

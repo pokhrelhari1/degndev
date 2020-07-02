@@ -41,6 +41,30 @@ a {
     font-size: 30px;
 }
 
+/*Dont touch this*/
+/* <!-- ================================================================================================== --> */
+/* Contact us media qurey */
+
+/* @media only screen and (min-width: 3000px) {
+  .btn2{
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 2000px) {
+  .btn2{
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 1500px) {
+    .btn3{
+      display: none;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .overlay p {
         font-size: 20px;
@@ -50,6 +74,9 @@ a {
     }
     .btn2 {
         font-size: 10px;
+    }
+    .btn3{
+      display: none;
     }
 }
 
@@ -63,7 +90,14 @@ a {
     .btn2 {
         font-size: 10px;
     }
-}
+    .btn3{
+      display: none;
+    }
+} */
+
+/* <!-- ================================================================================================== --> */
+
+/*Dont touch this above*/
 
 a:hover {
     color: white;
@@ -350,8 +384,10 @@ p {
     justify-content: center;
     align-items: center;
 }
+/*Dont touch this*/
+/* <!-- ================================================================================================== --> */
 
-.sidenav {
+/* .sidenav {
     height: 100%;
     width: 0;
     position: fixed;
@@ -391,12 +427,12 @@ p {
     .sidenav a {
         font-size: 18px;
     }
-}
+} */
 
 
 /* Contact form */
 
-input[type=text],
+/* input[type=text],
 select,
 textarea {
     width: 100%;
@@ -406,6 +442,7 @@ textarea {
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
+    height: 10px;
     resize: vertical;
 }
 
@@ -421,3 +458,75 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #45a049;
 }
+
+
+
+
+.overlay1 {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 1500px) {
+  .overlay-content1 {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  .overlay-content1 {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .overlay-content1 {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .overlay-content1 {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+  }
+}
+
+.overlay1 .closebtn {
+  position: absolute;
+  top: 30px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay1 a {font-size: 20px}
+  .overlay1 .closebtn {
+  font-size: 40px;
+  top: 15px;
+  } */
+/* <!-- ================================================================================================== --> */
