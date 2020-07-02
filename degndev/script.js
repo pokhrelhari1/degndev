@@ -11,15 +11,30 @@
   })();
 // <!-- video js end -->
 
+/*Dont touch this*/
+// ====================================================================
 // sidenav
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
+// function openNav() {
+//   document.getElementById("mySidenav").style.width = "300px";
+//   document.getElementById("main").style.marginLeft = "300px";
+//
+// }
+//
+// function closeNav() {
+//   document.getElementById("mySidenav").style.width = "0";
+//   document.getElementById("main").style.marginLeft= "0";
+//   document.body.style.backgroundColor = "white";
+// }
+//
+// //form small screen
+//
+// function openNav1() {
+//   document.getElementById("myNav").style.width = "100%";
+// }
+//
+// function closeNav1() {
+//   document.getElementById("myNav").style.width = "0%";
+// }
+// ========================================================================
 
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft= "0";
-  document.body.style.backgroundColor = "white";
-}
+/*Dont touch this above*/
