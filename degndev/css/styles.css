@@ -3,6 +3,11 @@ html{
     scroll-behavior: smooth;
 }
 
+#favicon{
+    height: 32px;
+    width: 32px;
+}
+
 body {
     height: 900px;
     padding-top: 55px;
@@ -44,6 +49,11 @@ body::-webkit-scrollbar-thumb {
 #pricingnav,
 #servicesnav{
   margin-bottom: 7vh;
+}
+
+.main{
+  /* display: inline-block; */
+  display: block;
 }
 
 li,
@@ -138,8 +148,6 @@ a {
       font-size: 15px;
     }
 
-
-
 }
 
 
@@ -229,6 +237,7 @@ button:hover {
     height: 100%;
     background-image: linear-gradient(45deg, #f5b200 5%, #fc636b 75%);
 }
+
 
 .effects {
     background-size: cover;
