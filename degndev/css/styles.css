@@ -1,4 +1,3 @@
-/* change font size pending make envelope head and parallax */
 html{
     scroll-behavior: smooth;
 }
@@ -35,8 +34,13 @@ body::-webkit-scrollbar-thumb {
     background: #ff6d92 linear-gradient(-45deg, #f5b200 0%, #fc636b 75%);
 }
 
-.navbar-brand {
-    margin-left: auto;
+img{
+  display: block;
+}
+
+.nav-item{
+  justify-content: center;
+  text-align: center;
 }
 
 #aboutusnav,
@@ -52,7 +56,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .main{
-  /* display: inline-block; */
   display: block;
 }
 
@@ -60,7 +63,6 @@ li,
 a {
     font-family: "Comic Neue", sans-serif;
     font-weight: 500;
-    /* font-size: 18px; */
     text-decoration: none;
 }
 
@@ -164,25 +166,18 @@ header {
     background-attachment: fixed;
     position: relative;
     overflow: hidden;
-    /* padding-top: 5; */
-    /* border-radius: 0 0 85% 85% / 30%; */
-    /* border-radius: 0px 0px 100px 100px; */
-    /* border-radius: 0 0 50% 50%/50%; */
-    /* border-radius: 0 0 50% 50%/50%; */
 }
 
-.parallax{
-   /* The image used */
-  background-image: url(img/3.png);
-
-  /* Set a specific height */
-  min-height: 100%;
-
-  /* Create the parallax scrolling effect */
-  /* background-attachment: fixed; */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.parallax {
+    width: 100%;
+    /* height: 700px; */
+    background: linear-gradient(-45deg, #f5b200 0%, #fc636b 75%),
+    url('../media/5.jpg') no-repeat fixed;
+    background-position: center 0px;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+    z-index: 2;
 }
 
 @media only screen and (max-device-width: 1366px) {
@@ -197,7 +192,22 @@ header .overlay {
     padding: 100px;
     color: #FFF;
     text-shadow: 1px 1px 1px #333;
-    background: linear-gradient(45deg, #f5b200 0%, #fc636b 75%);
+    background-color: linear-gradient(45deg, #f5b200 0%, #fc636b 75%);
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 85%, 0 60%);
+    background-blend-mode: overlay;
+}
+
+@media only screen and (max-device-width: 600px) {
+  header .overlay {
+      width: 100%;
+      height: 95vh;
+      padding: 100px;
+      color: #FFF;
+      text-shadow: 1px 1px 1px #333;
+      background-color: linear-gradient(45deg, #f5b200 0%, #fc636b 75%);
+      clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 65%, 0 60%);
+      background-blend-mode: overlay;
+  }
 }
 
 h1 {
@@ -230,16 +240,46 @@ button:hover {
     text-align: center;
 }
 
-.effects::before {
+.effect-services::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(45deg, #f5b200 5%, #fc636b 75%),url('../media/4.png'); */
+    background: linear-gradient(-45deg, #f5b200 0%, #fc636b 75%),
+    url('../media/4.png') no-repeat;
+    background-blend-mode: overlay;
+    /* clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%); */
+
+}
+
+.effect-services {
+    background-size: cover;
+}
+
+.effect-pricing::before {
     content: '';
     position: absolute;
     width: 100%;
     height: 100%;
     background-image: linear-gradient(45deg, #f5b200 5%, #fc636b 75%);
+    /* clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%); */
 }
 
+.effect-pricing {
+    background-size: cover;
+}
 
-.effects {
+.effect-footer::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, #f5b200 5%, #fc636b 75%);
+
+}
+
+.effect-footer {
     background-size: cover;
 }
 
@@ -316,6 +356,19 @@ p {
     text-align: center;
 }
 
+.card-deck:hover .card-wrap{
+  filter: blur(3px);
+  opacity: .5;
+  transform: scale(.98);
+  box-shadow: none;
+}
+.card-deck:hover .card-wrap:hover {
+  transform: scale(1);
+  filter: blur(0px);
+  opacity: 1;
+  box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
+}
+
 .modal-title{
   margin-left: auto;
   justify-content: center;
@@ -332,12 +385,10 @@ p {
 
 .video {
     z-index: -1;
-    /* margin-left: 10px; */
 }
 
 .vid {
     border: 6px solid #f18d08;
-    /* background: -webkit-linear-gradient(-45deg, #FDE08D, #DF9F28, #FDE08D); */
     border-radius: 20px;
     display: inline-block;
     width: 100%;
@@ -478,27 +529,6 @@ p {
     justify-content: center;
     align-items: center;
 }
-/* @media only screen and (max-device-width: 600px) {
-  .form-control1 {
-      border: none;
-      border-radius: 30px;
-      width: 100%;
-      height: calc(1.5em + .75rem + 2px);
-      padding: .1rem .1rem;
-      font-size: 1rem;
-      font-weight: 400;
-      line-height: 1;
-      color: #495057;
-      background-color: #fff;
-      background-clip: padding-box;
-      border-bottom: 1px solid black;
-      border-radius: 0rem;
-      transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-      padding-bottom: 10px;
-  }
-
-}
- */
 
 .form-control1 {
     border: none;
@@ -516,9 +546,6 @@ p {
     border-radius: 0rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-
-
-
 
 .btn-success:hover{
   color: white;
