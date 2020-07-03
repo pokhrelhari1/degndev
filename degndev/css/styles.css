@@ -370,8 +370,8 @@ p {
 }
 
 #web:hover {
-    background-color: transparant;
-    border: black;
+    background-color: black;
+    border: white;
 }
 
 #facebook:hover {
