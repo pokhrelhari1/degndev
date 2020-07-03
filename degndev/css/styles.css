@@ -1,4 +1,7 @@
 /* change font size pending make envelope head and parallax */
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     height: 900px;
@@ -31,6 +34,17 @@ body::-webkit-scrollbar-thumb {
     margin-left: auto;
 }
 
+#aboutusnav,
+#portfolionav,
+#teamnav
+{
+  margin-bottom: 9vh;
+}
+
+#pricingnav,
+#servicesnav{
+  margin-bottom: 7vh;
+}
 
 li,
 a {

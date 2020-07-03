@@ -11,6 +11,31 @@
   })();
 // <!-- video js end -->
 
+// animation script
+
+document.documentElement.style.setProperty('--animate-duration', '1s');
+
+const element = document.querySelector('.video');
+element.classList.add('animate__animated', 'animate__bounceInLeft');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // form validation
 function validateForm() {
