@@ -23,7 +23,9 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background: #ff6d92 linear-gradient(45deg, #f5b200 0%, #fc636b 75%);
+    /* background: #ff6d92 linear-gradient(45deg, #f5b200 0%, #fc636b 75%); */
+    /* background: linear-gradient(135deg, #bccbde, #c2dde6); */
+    background: #165c6c;
     border-radius: 30px;
     box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, .25), inset -2px -2px 2px rgba(0, 0, 0, .25);
 }
@@ -173,7 +175,7 @@ header {
 .parallax {
     width: 100%;
     /* height: 700px; */
-    background: linear-gradient(-45deg, #f5b200 0%, #fc636b 75%),
+    background: linear-gradient(-45deg, #87CEEB 100%, #fc636b 100%),
     url('../media/5.jpg') no-repeat fixed;
     background-position: center 0px;
     background-size: cover;
@@ -194,9 +196,10 @@ header .overlay {
     padding: 100px;
     color: #FFF;
     text-shadow: 1px 1px 1px #333;
-    background-color: linear-gradient(45deg, #f5b200 0%, #fc636b 75%);
+    /* background-color: linear-gradient(45deg, #f5b200 0%, #fc636b 75%); */
+    /* #87CEEB */
+    background-color: linear-gradient(45deg, ##87CEEB 0%, #fc636b 75%);
     clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 23% 86%, 0 74%, 0 63%, 0 43%, 0% 35%, 0 0);
-
     background-blend-mode: overlay;
 }
 
@@ -234,10 +237,6 @@ button {
     font-weight: 700;
 }
 
-button:hover {
-    cursor: pointer;
-}
-
 .aboutus {
     text-align: center;
 }
@@ -248,8 +247,9 @@ button:hover {
     width: 100%;
     height: 100%;
     background: linear-gradient(45deg, #bccbde 50%, #c2dde6 50%);
+    /* url('../media/5.jpg') no-repeat fixed; */
     background-blend-mode: overlay;
-
+    opacity: inherit;
 }
 
 .effect-services {
@@ -261,7 +261,9 @@ button:hover {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(-45deg, #bccbde 50%, #c2dde6 50%);
+    background: linear-gradient(-45deg, #bccbde 50%, #c2dde6 50%),
+    url('../media/5.jpg') no-repeat fixed;
+    background-blend-mode: overlay;
 }
 
 .effect-pricing {
@@ -485,7 +487,7 @@ p {
 
 .btn1:hover {
     margin-left: 10%;
-    background-image: linear-gradient( 45deg, #cc2b5e 10%, #fd5e086b 100%);
+    background-image: linear-gradient(45deg, #bccbde 10%, #0c9 100%);
     color: white
 }
 
@@ -496,7 +498,7 @@ p {
 
 .btn2:hover {
     margin-left: 10%;
-    background-image: linear-gradient( -45deg, #cc2b5e 10%, #fd5e086b 100%);
+    background-image: linear-gradient(-45deg, #bccbde 10%, #0c9 100%);
     color: white;
 }
 
@@ -586,7 +588,7 @@ a:not([href]) {
 }
 
 .contact-title{
-  background: linear-gradient(45deg, #f5b200 0%, #fc636b 75%);
+  background: linear-gradient(135deg, #bccbde, #c2dde6);
 }
 
 .close{
@@ -594,8 +596,9 @@ a:not([href]) {
 }
 
 .nav-link:hover{
-  background: -webkit-linear-gradient(-45deg, #FDE08D, #DF9F28, #FDE08D);
+  background: #0c9;
   border-radius: 50px;
+  color: white;
 }
 
 .f-link{
