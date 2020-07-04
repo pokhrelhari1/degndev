@@ -23,7 +23,7 @@
 }
 
 .font-merryweather1{
-	font: normal bold 25px var(--font-merryweather);
+	font: normal bold 20px var(--font-merryweather);
 }
 
 
@@ -66,7 +66,7 @@ html{
 
 body {
     height: 900px;
-    padding-top: 55px;
+     padding-top: 55px;
     scroll-padding-top: 70px;
     z-index: auto;
 }
