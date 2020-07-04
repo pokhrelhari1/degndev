@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css');
 
 
 /* root */
@@ -19,7 +20,7 @@
 /* font class start */
 
 .font-merryweather{
-	font: normal bold italic 35px var(--font-merryweather);
+	font: normal bold 35px var(--font-merryweather);
 }
 
 .font-merryweather1{
@@ -28,11 +29,11 @@
 
 
 .font-galada{
-  font: normal 600 30px var(  --font-galada);
+  font: normal 300 30px var(  --font-galada);
 }
 
 .font-bebas{
-  font: normal bold  14px var(--font-bebas);
+  font: normal 200  15px var(--font-bebas);
 }
 
 .font-size-40{
