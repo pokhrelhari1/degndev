@@ -31,7 +31,9 @@ body::-webkit-scrollbar-thumb {
 .navbar {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
     font-weight: 300;
-    background: #ff6d92 linear-gradient(-45deg, #f5b200 0%, #fc636b 75%);
+    /* background: #ff6d92 linear-gradient(-45deg, #f5b200 0%, #fc636b 75%); */
+    /* background: #c9d6fa; */
+    background: linear-gradient(135deg, #bccbde, #c2dde6);
 }
 
 img{
@@ -193,7 +195,8 @@ header .overlay {
     color: #FFF;
     text-shadow: 1px 1px 1px #333;
     background-color: linear-gradient(45deg, #f5b200 0%, #fc636b 75%);
-    clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 85%, 0 60%);
+    clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 23% 86%, 0 74%, 0 63%, 0 43%, 0% 35%, 0 0);
+
     background-blend-mode: overlay;
 }
 
@@ -205,7 +208,6 @@ header .overlay {
       color: #FFF;
       text-shadow: 1px 1px 1px #333;
       background-color: linear-gradient(45deg, #f5b200 0%, #fc636b 75%);
-      clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 65%, 0 60%);
       background-blend-mode: overlay;
   }
 }
@@ -245,11 +247,8 @@ button:hover {
     position: absolute;
     width: 100%;
     height: 100%;
-    /* background: linear-gradient(45deg, #f5b200 5%, #fc636b 75%),url('../media/4.png'); */
-    background: linear-gradient(-45deg, #f5b200 0%, #fc636b 75%),
-    url('../media/4.png') no-repeat;
+    background: linear-gradient(45deg, #bccbde 50%, #c2dde6 50%);
     background-blend-mode: overlay;
-    /* clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%); */
 
 }
 
@@ -262,8 +261,7 @@ button:hover {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(45deg, #f5b200 5%, #fc636b 75%);
-    /* clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%); */
+    background: linear-gradient(-45deg, #bccbde 50%, #c2dde6 50%);
 }
 
 .effect-pricing {
@@ -275,7 +273,7 @@ button:hover {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(45deg, #f5b200 5%, #fc636b 75%);
+    background: #c9d6fa;
 
 }
 
@@ -303,6 +301,14 @@ p {
 
 .color-red{
   color: red;
+}
+
+.color-icon{
+  color: #64657e;
+}
+
+.color-icontext{
+  color: #165c6c;
 }
 
 #services {
@@ -388,7 +394,8 @@ p {
 }
 
 .vid {
-    border: 6px solid #f18d08;
+    border: 6px solid #c9d6fa;
+      /* background: #c9d6fa; */
     border-radius: 20px;
     display: inline-block;
     width: 100%;
