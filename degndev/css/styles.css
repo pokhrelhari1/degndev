@@ -1,3 +1,60 @@
+/* font import */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+/* root */
+
+:root{
+    --color-black:#000;
+    --color-white:#ffffff;
+    --color-border:darkgrey;
+    --font-merryweather:'Merriweather', serif;
+    --font-bebas:'Rubik', sans-serif;
+    --font-galada:'Galada', cursive;
+
+}
+/* font class start */
+
+.font-merryweather{
+	font: normal bold italic 35px var(--font-merryweather);
+}
+
+.font-merryweather1{
+	font: normal bold 25px var(--font-merryweather);
+}
+
+
+.font-galada{
+  font: normal 600 30px var(  --font-galada);
+}
+
+.font-bebas{
+  font: normal bold  14px var(--font-bebas);
+}
+
+.font-size-40{
+    font-size: 40px;
+}
+.font-size-34{
+    font-size: 34px;
+}
+.font-size-27{
+    font-size: 27px;
+}
+.font-size-20{
+    font-size: 20px;
+}
+.font-size-16{
+    font-size: 16px;
+}
+
+
+/* font class end */
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -23,8 +80,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    /* background: #ff6d92 linear-gradient(45deg, #f5b200 0%, #fc636b 75%); */
-    /* background: linear-gradient(135deg, #bccbde, #c2dde6); */
+
     background: #165c6c;
     border-radius: 30px;
     box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, .25), inset -2px -2px 2px rgba(0, 0, 0, .25);
@@ -77,6 +133,7 @@ a {
 @media only screen and (max-width: 800px) {
   .font1{
     font-size: 11px;
+
   }
 }
 
@@ -113,6 +170,7 @@ a {
     }
     .font1{
       font-size: 15px;
+
     }
 
 }
@@ -180,7 +238,7 @@ header {
     background-position: center 0px;
     background-size: cover;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
     z-index: 2;
 }
 
