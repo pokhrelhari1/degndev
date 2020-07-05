@@ -1,3 +1,18 @@
+<!--Contents -->
+<!--
+1)navbar
+2)header
+3)aboutus
+4)services
+5)portfolio
+6)pricing
+7)pricing card
+8)our team
+9)Contact us floating and form
+10)footer
+11)script
+ -->
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -9,12 +24,18 @@
 <link rel="stylesheet" href="degndev/css/styles.css">
 <link rel="stylesheet" href="degndev/css/bootstrap.min.css">
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spinkit/2.0.1/spinkit.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
 
-<div id="main">
+<!-- main is not closed where is main div so i have closed it here -->
+<div id="main"></div>
+
+<!-- =============================******************================================= -->
+<!-- 1)navbar start -->
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark scrolling-navbar">
     <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -47,14 +68,16 @@
     </div>
   </nav>
   <!-- navbar end -->
-<!-- navbar end -->
+<!-- =============================******************================================= -->
 
+<!-- =============================******************================================= -->
+<!-- 2)header start -->
 <header>
   <div>
     <div class="parallax overlay">
       <div class="mt-5"><br><br>
-        <p class="color-black font-merryweather">Welcome to DEG n DEV</p>
-        <p class="color-black font-merryweather">Graphics Design and Development all in one place</h3>
+        <p class="color-black font-merryweather ml3">Welcome to DEG n DEV</p>
+        <p class="color-black font-merryweather ml31">Graphics Design and Development all in one place</h3>
       </div>
       <div>
         <a href="#aboutusnav"><button class="btn1 mt-3 mx-3 animate__animated animate__bounceInUp" type="button" name="button">GET STARTED</button></a>
@@ -64,8 +87,14 @@
     </div>
   </div>
 </header>
+<!-- header end -->
+<!-- =============================******************================================= -->
 
-<!-- about us start -->
+
+
+
+<!-- =============================******************================================= -->
+<!--3) about us start -->
 
 <div id="aboutusnav"></div>
 <section class="color-icontext">
@@ -98,8 +127,11 @@
 <br>
 
 <!-- about us end -->
+<!-- =============================******************================================= -->
 
-<!-- services start -->
+
+<!-- =============================******************================================= -->
+<!--4) services start -->
 <div id="servicesnav"></div>
 <div class="effect-services" id="services">
   <div class="container">
@@ -221,8 +253,12 @@
 </div>
 
 <!-- services end -->
+<!-- =============================******************================================= -->
 
-<!-- portfolio start -->
+
+
+<!-- =============================******************================================= -->
+<!--5) portfolio start -->
 <div id="portfolionav"></div>
 <section class="portfolio color-icontext" id="portfolio">
   <div class="container">
@@ -273,8 +309,11 @@
 </section>
 
 <!-- end portfolio -->
+<!-- =============================******************================================= -->
 
-<!-- pricing start -->
+
+<!-- =============================******************================================= -->
+<!-- 6 pricing start -->
 <div id="pricingnav"></div>
 <section class="effect-pricing" id="pricing">
   <div class="container">
@@ -340,8 +379,11 @@
 </section>
 
 <!-- pricing end -->
+<!-- =============================******************================================= -->
 
-<!-- pricing modal -->
+
+<!-- =============================******************================================= -->
+<!--7 pricing modal start-->
 
 <!-- gold modal start -->
 <div id="gold" class="modal fade" role="dialog">
@@ -490,8 +532,11 @@
 <!-- platinum modal end -->
 
 <!-- pricing modal end -->
+<!-- =============================******************================================= -->
 
-<!-- team start -->
+
+<!-- =============================******************================================= -->
+<!--8 team start -->
 <div id="teamnav"></div>
 <section class="team color-icontext" id="team">
   <div class="container">
@@ -547,8 +592,12 @@
     <br>
 </section>
 <!-- team end -->
+<!-- =============================******************================================= -->
 
-<!-- message modal -->
+
+
+<!-- =============================******************================================= -->
+<!--9 start of message modal  for contactus-->
   <a href="#" data-toggle="modal" data-target="#contact" class="animate__animated animate__bounceInRight animate__delay-1s float">
     <div class="float-icon">
       <i class="fa fa-envelope-o fa-lg my-float"></i>
@@ -655,9 +704,12 @@
     </div>
   </div>
 </div>
-<!-- message modal end -->
+<!-- message modal for contact usend -->
+<!-- =============================******************================================= -->
 
-<!-- footer start -->
+
+<!-- =============================******************================================= -->
+<!--10 footer start -->
 <section class="effect-footer color-white" id="footer">
   <footer class="footer py-4 page-footer text-center text-md-left pt-0">
     <!-- Footer Links -->
@@ -718,6 +770,11 @@
 
 <!-- end of footer -->
 
+<!-- =============================******************================================= -->
+
+
+<!-- =============================******************================================= -->
+<!--11 start of script -->
 <script src="Degndev/js/script.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="degndev/js/jquery.hoverplay.js"></script>
@@ -729,6 +786,50 @@
     $('.navbar-collapse').collapse('hide');
   });
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script type="text/javascript">
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml3');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml3 .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 2250,
+    delay: (el, i) => 150 * (i+1)
+  }).add({
+    targets: '.ml3',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+
+
+  var textWrapper = document.querySelector('.ml31');
+  textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+  anime.timeline({loop: true})
+    .add({
+      targets: '.ml31 .letter',
+      opacity: [0,1],
+      easing: "easeInOutQuad",
+      duration: 2250,
+      delay: (el, i) => 150 * (i+1)
+    }).add({
+      targets: '.ml31',
+      opacity: 0,
+      duration: 1000,
+      easing: "easeOutExpo",
+      // delay: 2000
+    });
+</script>
+
+<!-- end of script -->
+<!-- =============================******************================================= -->
+
 
 </body>
 

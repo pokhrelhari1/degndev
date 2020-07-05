@@ -20,23 +20,6 @@ element.classList.add('animate__animated', 'animate__bounceInLeft');
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // form validation
 function validateForm() {
   var name =  document.getElementById('name').value;
