@@ -567,9 +567,6 @@ header .overlay {
   color: #165c6c;
 }
 
-
-
-
 .color-gold{
   background: -webkit-linear-gradient(45deg, #FDE08D, #DF9F28, #FDE08D);
 }
@@ -580,6 +577,10 @@ header .overlay {
 
 .color-platinum{
   background: -webkit-linear-gradient(45deg, #ffffff, #66ffff, #ffffff);
+}
+
+.color-viewall {
+    background: linear-gradient(135deg, #bccbde, #c2dde6);
 }
 
 /* colorssssssss end */
@@ -858,3 +859,22 @@ a:not([href]) {
 }
 /* extra second */
 /* =================================================================================== */
+
+
+
+
+/* 23 animation on scroll start */
+/* ===================================================================================== */
+
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1.5s ease-in;
+}
+.fade-in.appear {
+  opacity: 1;
+}
+
+
+/* animation on scroll end */
+/* ===================================================================================== */
