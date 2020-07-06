@@ -150,9 +150,9 @@ body::-webkit-scrollbar-thumb {
   display: block;
 }
 
-li{
+/* li{
   text-align: justify;
-}
+} */
 
 li,
 a {
@@ -909,13 +909,6 @@ a:not([href]) {
 /* ===================================================================================== */
 
 
-.fade-in {
-  opacity: 0;
-  transition: opacity 1.5s ease-in;
-}
-.fade-in.appear {
-  opacity: 1;
-}
 
 
 /* animation on scroll end */
