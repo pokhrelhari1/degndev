@@ -41,6 +41,9 @@
 /*2 ========================================================================================== */
                              /* animatation import start*/
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/spinkit/2.0.1/spinkit.min.css');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css');
                              /* animatation import end*/
 /* ========================================================================================== */
 
@@ -145,6 +148,10 @@ body::-webkit-scrollbar-thumb {
 
 .main{
   display: block;
+}
+
+li{
+  text-align: justify;
 }
 
 li,

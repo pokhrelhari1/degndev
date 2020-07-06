@@ -23,9 +23,11 @@
 <link rel="icon" id="favicon" type="icon" href="degndev/media/favicon.ico">
 <link rel="stylesheet" href="degndev/css/styles.css">
 <link rel="stylesheet" href="degndev/css/bootstrap.min.css">
+<link rel="stylesheet" href="degndev/css/aos.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"> -->
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"> -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spinkit/2.0.1/spinkit.min.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spinkit/2.0.1/spinkit.min.css"> -->
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 
 </head>
 
@@ -76,7 +78,7 @@
   <div>
     <div class="parallax overlay">
       <div class="mt-5"><br><br>
-        <p class="color-black font-merryweather ml3">Welcome to DEG n DEV</p>
+        <p class="color-black font-merryweather ml3  animate__animated animate__bounceInDown">Welcome to DEG n DEV</p>
         <p class="color-black font-merryweather ml31"><span class="text-wrapper">
           <!-- <span class="line line1"></span> -->
           <span class="letters">Graphics Design and Development all in one place</span>
@@ -336,10 +338,11 @@
                         <div class="card-body">
                             <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>10 users included</li>
-                                <li>2 GB of storage</li>
-                                <li>Email support</li>
-                                <li>Help center access</li>
+                              <li><i class="fa fa-check-circle pl-5" aria-hidden="true"></i><span class="pl-4">Up to 5 Pages</span> </li>
+                              <li><i class="fa fa-check-circle pl-5" aria-hidden="true"></i><span class="pl-4">Design Customization</span></li>
+                              <li><i class="fa fa-check-circle pl-5" aria-hidden="true"></i><span class="pl-4">Content Upload</span></li>
+                              <li><i class="fa fa-check-circle pl-5" aria-hidden="true"></i><span class="pl-4">Responsive Design</span></li>
+                              <li><i class="fa fa-check-circle pl-5" aria-hidden="true"></i><span class="pl-4">.np</span></li>
                             </ul>
                             <button type="button" data-toggle="modal" data-target="#gold" class="btn btn-lg btn-block btn-primary">Get started</button>
                         </div>
@@ -353,10 +356,11 @@
                         <div class="card-body">
                             <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>20 users included</li>
-                                <li>10 GB of storage</li>
-                                <li>Priority email support</li>
-                                <li>Help center access</li>
+                              <li><i class="fa fa-check-circle pl-5" aria-hidden="true"></i><span class="pl-4">Unlimited Pages</span> </li>
+                              <li><i class="fa fa-check-circle pl-5" aria-hidden="true"></i><span class="pl-4">Design Customization</span></li>
+                              <li><i class="fa fa-check-circle pl-5" aria-hidden="true"></i><span class="pl-4">Content Upload</span></li>
+                              <li><i class="fa fa-check-circle pl-5" aria-hidden="true"></i><span class="pl-4">Responsive Design</span></li>
+                              <li><i class="fa fa-check-circle pl-5" aria-hidden="true"></i><span class="pl-4">.np/.com/.net/.org</span></li>
                             </ul>
                             <button type="button" data-toggle="modal" data-target="#diamond" class="btn btn-lg btn-block btn-primary">Get started</button>
                         </div>
@@ -370,10 +374,11 @@
                         <div class="card-body">
                             <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>30 users included</li>
-                                <li>15 GB of storage</li>
-                                <li>Phone and email support</li>
-                                <li>Help center access</li>
+                              <li><i class="fa fa-check-circle pl-5" aria-hidden="true"></i><span class="pl-4">Up to 5 Pages</span> </li>
+                              <li><i class="fa fa-check-circle pl-5" aria-hidden="true"></i><span class="pl-4">Design Customization</span></li>
+                              <li><i class="fa fa-check-circle pl-5" aria-hidden="true"></i><span class="pl-4">Content Upload</span></li>
+                              <li><i class="fa fa-check-circle pl-5" aria-hidden="true"></i><span class="pl-4">Responsive Design</span></li>
+                              <li><i class="fa fa-check-circle pl-5" aria-hidden="true"></i><span class="pl-4">.np/.com/.net/.org</span></li>
                             </ul>
                             <button type="button" data-toggle="modal" data-target="#platinum" class="btn btn-lg btn-block btn-primary">Get started</button>
                         </div>
@@ -849,6 +854,7 @@
   });
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script type="text/javascript">
 // Wrap every letter in a span
 // var textWrapper = document.querySelector('.ml3');
@@ -920,6 +926,13 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1000
   });
+</script>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script> -->
+<script src="degndev/js/aos.js"></script>
+
+<script type="text/javascript">
+  AOS.init();
 </script>
 
 <!-- end of script -->
