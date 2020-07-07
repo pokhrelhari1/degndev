@@ -124,7 +124,7 @@
     }
     
     body::-webkit-scrollbar-thumb {
-        background: #165c6c;
+        background: lightskyblue;
         border-radius: 30px;
         box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, .25), inset -2px -2px 2px rgba(0, 0, 0, .25);
     }
@@ -349,6 +349,18 @@
             display: inline-block;
             margin-left: auto;
             margin-right: auto;
+        }
+    }
+    
+    .carousel-icon-left,
+    .carousel-icon-right {
+        margin-top: 50vh;
+    }
+    
+    @media only screen and (max-device-width:1200px) {
+        .carousel-icon-left,
+        .carousel-icon-right {
+            margin-top: 30vh;
         }
     }
     /* pricing end */
@@ -580,20 +592,6 @@
     h1,
     p {
         z-index: 1;
-    }
-    
-    .carousel-control-next-icon,
-    .carousel-control-prev-icon {
-        /* display: inline-block;
-    width: 100%;
-    height: 80px;
-    background: no-repeat 50%/100% 100%; */
-        /* margin-left: auto; */
-        margin-top: 45vh;
-    }
-    
-    .prev-btn {
-        background-color: black;
     }
     /* extra first end */
     /* =============================================================================== */
