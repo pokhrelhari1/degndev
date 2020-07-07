@@ -132,7 +132,7 @@
     }
     
     body::-webkit-scrollbar-thumb {
-        background: #165c6c;
+        background: lightskyblue;
         border-radius: 30px;
         box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, .25), inset -2px -2px 2px rgba(0, 0, 0, .25);
     }
@@ -157,14 +157,12 @@
     /* =================================================================================== */
     /*6 ================================================================================= */
     /* navbar start */
-    
-    .navbar {
+    /* .navbar {
         box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
         font-weight: 300;
-        /* background: #ff6d92 linear-gradient(-45deg, #f5b200 0%, #fc636b 75%); */
-        /* background: #c9d6fa; */
         background: linear-gradient(135deg, #bccbde, #c2dde6);
-    }
+        color: transparent !important;
+    } */
     
     .nav-item {
         justify-content: center;
@@ -175,6 +173,21 @@
         background: #0c9;
         border-radius: 50px;
         color: white;
+    }
+    
+    nav.navbar {
+        -webkit-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+    }
+    
+    .navbar-inverse {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    
+    nav.navbar.transparent {
+        background: linear-gradient(135deg, #bccbde, #c2dde6);
+        border-color: #080808;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
     }
     
     #aboutusnav,
@@ -214,7 +227,7 @@
         background-size: cover;
         position: relative;
         overflow: hidden;
-        z-index: 2;
+        z-index: 1;
     }
     
     @media only screen and (max-device-width: 1366px) {
@@ -357,6 +370,18 @@
             display: inline-block;
             margin-left: auto;
             margin-right: auto;
+        }
+    }
+    
+    .carousel-icon-left,
+    .carousel-icon-right {
+        margin-top: 50vh;
+    }
+    
+    @media only screen and (max-device-width:1200px) {
+        .carousel-icon-left,
+        .carousel-icon-right {
+            margin-top: 30vh;
         }
     }
     /* pricing end */
@@ -588,20 +613,6 @@
     h1,
     p {
         z-index: 1;
-    }
-    
-    .carousel-control-next-icon,
-    .carousel-control-prev-icon {
-        /* display: inline-block;
-    width: 100%;
-    height: 80px;
-    background: no-repeat 50%/100% 100%; */
-        /* margin-left: auto; */
-        margin-top: 45vh;
-    }
-    
-    .prev-btn {
-        background-color: black;
     }
     /* extra first end */
     /* =============================================================================== */
