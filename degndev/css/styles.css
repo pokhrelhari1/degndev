@@ -75,6 +75,10 @@
         font: normal 200 15px var(--font-bebas);
     }
     
+    .font-bebas-lg {
+        font: normal 200 20px var(--font-bebas);
+    }
+    
     .font-size-40 {
         font-size: 40px;
     }
@@ -93,6 +97,10 @@
     
     .font-size-16 {
         font-size: 16px;
+    }
+    
+    .justifyy {
+        text-align: justify;
     }
     /* font class end */
     /* =================================================================================== */
