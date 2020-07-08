@@ -413,6 +413,29 @@
             margin-top: 30vh;
         }
     }
+    
+    @media (min-width: 576px) {
+        .card-deck .card {
+            -ms-flex: 1 0 0%;
+            flex: 1 0 0%;
+            margin-right: 15px;
+            margin-bottom: 0;
+            margin-left: auto;
+            background: transparent;
+        }
+    }
+    
+    .gold {
+        background: -webkit-linear-gradient(45deg, #FDE08D, #DF9F28, #FDE08D);
+    }
+    
+    .diamond {
+        background: -webkit-linear-gradient(-45deg, #FFFFFF, #BEC0C2, #FFFFFF);
+    }
+    
+    .platinum {
+        background: -webkit-linear-gradient(45deg, #ffffff, #66ffff, #ffffff);
+    }
     /* pricing end */
     /* ==================================================================================== */
     /* ===================================================================================== */
