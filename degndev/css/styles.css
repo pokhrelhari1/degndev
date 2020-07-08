@@ -199,6 +199,36 @@
     #servicesnav {
         margin-bottom: 7vh;
     }
+    
+    @media only screen and (max-device-width:800px) {
+        nav.navbar {
+            -webkit-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+        }
+        .navbar-inverse {
+            background: linear-gradient(135deg, #bccbde, #c2dde6);
+        }
+        nav.navbar.transparent {
+            background: linear-gradient(135deg, #bccbde, #c2dde6);
+            border-color: #080808;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+        }
+    }
+    
+    @media only screen and (max-device-width:400px) {
+        nav.navbar {
+            -webkit-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+        }
+        .navbar-inverse {
+            background: linear-gradient(135deg, #bccbde, #c2dde6);
+        }
+        nav.navbar.transparent {
+            background: linear-gradient(135deg, #bccbde, #c2dde6);
+            border-color: #080808;
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+        }
+    }
     /* navbar end */
     /* ==================================================================================== */
     /*7  ================================================================================== */
