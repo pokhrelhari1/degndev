@@ -118,7 +118,6 @@
     
     body {
         height: 900px;
-        padding-top: 55px;
         scroll-padding-top: 70px;
         z-index: auto;
     }
