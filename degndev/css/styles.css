@@ -249,14 +249,21 @@
     }
     
     .parallax {
-        width: 100%;
+        /* width: 100%; */
         /* height: 700px; */
         background: linear-gradient(-45deg, #87CEEB 100%, #fc636b 100%), url('../media/5.jpg') no-repeat fixed;
-        background-position: center 0px;
+        /* background-position: center 0px;
         background-size: cover;
         position: relative;
         overflow: hidden;
-        z-index: 1;
+        z-index: 1; */
+        min-height: fit-content;
+        background-attachment: fixed;
+        /* background-position: center; */
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 1;
+        max-height: 850px;
     }
     
     @media only screen and (max-device-width: 1366px) {
