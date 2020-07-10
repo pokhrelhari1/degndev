@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!--5) portfolio start -->
+<div id="portfolionav"></div>
+<section class="portfolio color-icontext" id="portfolio">
+  <div class="container">
+    <div class="mt-5">
+      <h1 class="font-galada">Portfolio</h1>
+    </div>
+    <div class="album">
+      <div class="container">
+        <div class="row">
+          {% for portfolio in portfolios.all %}
+          <div class="col-md-4" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <div class="card mb-4 shadow-sm">
+              <img class="card-img-top" src="{{ portfolio.image.url }}" alt="Card image cap">
+              <div class="card-body">
+                <p class="card-text">{{ portfolio.body}}</p>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+</section>
+
+<!-- end portfolio -->

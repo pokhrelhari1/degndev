@@ -18,9 +18,12 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 import portfolio.views
-
+from portfolio import views
+from team import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', portfolio.views.home, name='home'),
+    # path('team',team.views.team.home, name='team'),
+
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
