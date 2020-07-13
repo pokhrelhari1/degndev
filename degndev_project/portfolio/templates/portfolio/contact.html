@@ -65,8 +65,8 @@
                   <div class="col-md-6">
                     <div class="md-form mb-0 mt-3">
                       <div class="form-group">
-                        <select class="form-control" name="service" id="service">
-                          <option>Select Package</option>
+                        <select class="form-control" name="package" id="package">
+                          <option value=" ">Select Package</option>
                           <option value="1">Website</option>
                           <option value="2">App Development</option>
                           <option value="3">Graphics Design</option>
@@ -78,8 +78,8 @@
                   <div class="col-md-6">
                     <div class="md-form mb-0 mt-3">
                       <div class="form-group">
-                        <select class="form-control" name="service" id="service">
-                          <option>Select Plan</option>
+                        <select class="form-control" name="plan" id="plan">
+                          <option value=" ">Select Plan</option>
                           <option value="1">Gold</option>
                           <option value="2">Diamond</option>
                           <option value="3">Platinum</option>
@@ -106,11 +106,12 @@
                 <!--Grid row-->
 
               </form>
+              <div class="status pb-2" style="color:red; text-align:center;"></div>
               <div class="text-center text-md-center">
                 <a><button class="btn4 mt-2 mx-3" type="button" name="button" onclick="validateForm()" onclick="document.getElementById('contact-form').submit();">SEND</button></a>
                 <a><button class="btn5 mt-2 mx-3" type="button" name="button" onclick="document.getElementById('contact-form').reset();">CLEAR</button></a>
               </div>
-              <div class="status"></div>
+              <!-- <div class="status" style="color:red;"></div> -->
             </div>
             <!--Grid column-->
 

@@ -17,7 +17,10 @@
         <div class="mt-5">
         </div>
         <video class="vid" controls data-play="hover" muted="muted" height="auto" width="50%">
-          <source src="{% static 'media/video.mp4' %}" type="video/mp4">
+          {% for p in portfolios.all %}
+          <source src="{{ p.video.url }}" type="video/mp4">
+          {% endfor %}
+
         </video>
       </div>
     </div>

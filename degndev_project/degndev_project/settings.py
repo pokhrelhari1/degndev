@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'degndev_project.apps.SuitConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -38,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'portfolio.apps.PortfolioConfig',
-    'team.apps.TeamConfig',
+    'logofolio.apps.LogofolioConfig',
+    'appfolio.apps.AppfolioConfig',
+    'webfolio.apps.WebfolioConfig',
 ]
 
 MIDDLEWARE = [
@@ -56,7 +59,8 @@ ROOT_URLCONF = 'degndev_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        # 'DIRS': [os.path.join(BASE_DIR, 'templates/')],
+        'DIRS': [os.path.join(BASE_DIR, 'portfolio/templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -78,9 +82,9 @@ WSGI_APPLICATION = 'degndev_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dbdegndev',
+        'NAME': 'degndev',
         'USER': 'postgres',
-        'PASSWORD': 'H@Ri42779',
+        'PASSWORD': 'jak525865',
         'HOST': 'localhost',
         'PORT': '5432',
     }

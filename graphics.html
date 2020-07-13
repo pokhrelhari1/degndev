@@ -1,0 +1,344 @@
+<!--Contents -->
+<!--
+1)navbar
+2)header
+3)aboutus
+4)services
+5)portfolio
+6)pricing
+7)pricing card
+8)our team
+9)Contact us floating and form
+10)footer
+11)script
+ -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Design N Development</title>
+  <link rel="icon" id="favicon" type="icon" href="../extra/media/favicon.ico">
+  <link rel="stylesheet" href="../extra/css/styles.css">
+  <link rel="stylesheet" href="../extra/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../extra/css/aos.css">
+
+</head>
+
+<body style="background: linear-gradient(45deg, #bccbde 50%, #c2dde6 50%);">
+
+  <!-- main is not closed where is main div so i have closed it here -->
+  <div id="main">
+
+    <!-- =============================******************================================= -->
+    <!-- 1)navbar start -->
+    <nav class="navbar navbar-expand-lg  fixed-top scrolling-navbar" style="background: linear-gradient(135deg, #bccbde, #c2dde6);">
+      <a class="navbar-brand" href="#"><img src="../extra/media/logo1.png" height="30px" alt="logo"> </a>
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+
+
+
+      <div class="collapse navbar-collapse color-black" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <!-- <a class="nav-link js-scroll-trigger" href="#"><span style="color:black"><strong>Home</strong> </span></a> -->
+            <a href="index.html"><button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Go Back!</button></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- =============================******************================================= -->
+
+
+
+    <!-- =============================******************================================= -->
+    <!--5) portfolio start -->
+    <div id="portfolionav"></div>
+    <section class="portfolio color-icontext" id="portfolio">
+      <div class="container">
+        <div class="mt-5">
+          <h1 class="font-galada">Graphic Design</h1>
+        </div>
+        <div class="album py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="card mb-4 shadow-sm" style="background:#bccbde;">
+                  <img src="../extra/media/favicon.png" alt="Graphic Design" height="200px">
+                    <div class="card-body" style="background:#bccbde;">
+                      <p class="card-text font-merryweather1">Graphic Design1</p>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 ">
+              <div class="card mb-4 shadow-sm">
+                 <img src="../extra/media/favicon.png" alt="Graphic Design" height="200px">
+                  <div class="card-body">
+                    <p class="card-text font-merryweather1">Graphic Design2</p>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <div class="card mb-4 shadow-sm">
+            <img src="../extra/media/favicon.png" style="justify-content:center;" alt="Graphic Design" height="200px">
+              <div class="card-body">
+                <p class="card-text font-merryweather1" style="text-decoration:none;">Graphic Design3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </div>
+  <br>
+  </section>
+
+  <!-- end portfolio -->
+  <!-- =============================******************================================= -->
+
+
+
+
+
+  <!-- =============================******************================================= -->
+  <!--9 start of message modal  for contactus-->
+  <a href="#" data-toggle="modal" data-target="#contact" class="animate__animated animate__bounceInRight animate__delay-1s float">
+    <div class="float-icon">
+      <i class="fa fa-envelope-o fa-lg my-float"></i>
+    </div>
+  </a>
+
+  <!-- <div class="fb-customerchat" page_id="104101318042849">
+    </div> -->
+
+  <div id="contact" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="content">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header contact-title">
+          <h4 class="modal-title color-icon font-merryweather1">CONTACT US </h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <!--Section: Contact v.2-->
+          <div class="mb-4">
+            <div class="row">
+
+              <!--Grid column-->
+              <div class="col-md-9 mb-md-0 mb-5">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                  <!--Grid row-->
+                  <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                      <div class="md-form mb-0">
+                        <input type="text" id="name" name="name" class="form-control1">
+                        <label for="name" class="">Your name</label>
+                      </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                      <div class="md-form mb-0">
+                        <input type="text" id="email" name="email" class="form-control1">
+                        <label for="email" class="">Your email</label>
+                      </div>
+                    </div>
+                    <!--Grid column-->
+
+                  </div>
+                  <!--Grid row-->
+
+                  <!--Grid row-->
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="md-form mb-0">
+                        <input type="text" id="subject" name="subject" class="form-control1">
+                        <label for="subject" class="">Subject</label>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Grid row-->
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="md-form mb-0 mt-3">
+                        <div class="form-group">
+                          <select class="form-control" name="service" id="package">
+                            <option value=" ">Select Package</option>
+                            <option value="1">Website</option>
+                            <option value="2">App Development</option>
+                            <option value="3">Graphics Design</option>
+                          </select>
+                          <!-- <p class="help-block text-danger"></p> -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="md-form mb-0 mt-3">
+                        <div class="form-group">
+                          <select class="form-control" name="service" id="plan">
+                            <option value=" ">Select Plan</option>
+                            <option value="1">Gold</option>
+                            <option value="2">Diamond</option>
+                            <option value="3">Platinum</option>
+                            <!-- <p class="help-block text-danger"></p> -->
+                          </select>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--Grid row-->
+                  <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                      <div class="md-form">
+                        <textarea type="text" id="message" name="message" rows="2" class="form-control1 md-textarea"></textarea>
+                        <label for="message">Your message</label>
+                      </div>
+
+                    </div>
+                  </div>
+                  <!--Grid row-->
+
+                </form>
+                <div class="status pb-2" style="color:red; text-align:center;"></div>
+                <div class="text-center text-md-center">
+                  <a><button class="btn4 mt-2 mx-3" type="button" name="button" onclick="validateForm()" onclick="document.getElementById('contact-form').submit();">SEND</button></a>
+                  <a><button class="btn5 mt-2 mx-3" type="button" name="button" onclick="document.getElementById('contact-form').reset();">CLEAR</button></a>
+                </div>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-md-3 text-center">
+                <ul class="list-unstyled mb-0">
+                  <li><i class="fa fa-map fa-lg"></i>
+                    <p class="font1 font-bebas">Kathmandu 44600, NEPAL</p>
+                  </li>
+
+                  <li><i class="fa fa-phone mt-4 fa-lg"></i>
+                    <p class="font1 font-bebas">+977-(xxxxxxxxxx)</p>
+                  </li>
+
+                  <li><i class="fa fa-envelope mt-4 fa-lg"></i>
+                    <p class="font1 font-bebas">degndev@gmail.com</p>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+            </div>
+          </div>
+          <!--Section: Contact v.2-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- message modal for contact usend -->
+  <!-- =============================******************================================= -->
+
+
+  <section style="background: #c9d6fa;" class="effect-footer fixed-bottom" id="footer">
+      <footer class="page-footer page-footer text-center text-md-left pt-0">
+        <div class="footer-copyright fixed-bottom text-center py-3">© 2020 Copyright:
+          <a href="https://www.degndev.com/"> DEGnDEV</a>
+        </div>
+      </footer>
+  </section>
+
+
+  <!-- =============================******************================================= -->
+  <!--11 start of script -->
+  <script src="../extra/js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="../extra/js/jquery.hoverplay.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $('.js-scroll-trigger').click(function() {
+      $('.navbar-collapse').collapse('hide');
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script type="text/javascript">
+    // Wrap every letter in a span
+    var textWrapper = document.querySelector('.ml31 .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({
+        loop: true
+      })
+      .add({
+        targets: '.ml31 .line',
+        scaleY: [0, 1],
+        opacity: [0.5, 1],
+        easing: "easeOutExpo",
+        duration: 700
+      })
+      .add({
+        targets: '.ml31 .line',
+        translateX: [0, document.querySelector('.ml31 .letters').getBoundingClientRect().width + 10],
+        easing: "easeOutExpo",
+        duration: 700,
+        delay: 100
+      }).add({
+        targets: '.ml31 .letter',
+        opacity: [0, 1],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=775',
+        delay: (el, i) => 34 * (i + 1)
+      }).add({
+        targets: '.ml31',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+      });
+  </script>
+
+  <script>
+    $(window).scroll(function() {
+      if ($(document).scrollTop() > 600) {
+        $('nav').addClass('transparent');
+      } else {
+        $('nav').removeClass('transparent');
+      }
+    });
+  </script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script> -->
+  <script src="../extra/js/aos.js"></script>
+
+  <script type="text/javascript">
+    AOS.init();
+  </script>
+
+
+  <script type="text/javascript">
+    $('#closemodal').modal('hide');
+  </script>
+
+  <!-- end of script -->
+  <!-- =============================******************================================= -->
+
+
+</body>
+
+</html>
+
+</html>

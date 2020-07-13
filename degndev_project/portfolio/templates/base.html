@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="{% static 'css/aos.css' %}" />
 </head>
 
+
   <body>
 
     <!-- head file -->
@@ -112,5 +113,18 @@
     <script type="text/javascript">
       AOS.init();
     </script>
+
+    <script type="text/javascript">
+    function fillsquare(area, square) {
+         var area = area;
+         var square = square;
+
+         document.getElementById("package").value = area;
+         document.getElementById("plan").value = square;
+       }
+
+
+    </script>
+
   </body>
 </html>
