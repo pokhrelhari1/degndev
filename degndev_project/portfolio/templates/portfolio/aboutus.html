@@ -12,26 +12,28 @@
     </div>
   </div>
   <div class="row m-0">
-    <div class="col-sm-7 col-md-6">
-      <div class="video" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-        <div class="mt-5">
-        </div>
-        <video class="vid" controls data-play="hover" muted="muted" height="auto" width="50%">
-          {% for p in portfolios.all %}
-          <source src="{{ p.video.url }}" type="video/mp4">
-          {% endfor %}
+    <div class="col-sm-7 col-md-12 col-lg-6 col-12">
+      <div class="px-1">
+        <div class="video" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="mt-5">
+          </div>
+          <video class="vid" controls data-play="hover" muted="muted" height="auto" width="50%">
+            {% for p in portfolios.all %}
+            <source src="{{ p.video.url }}" type="video/mp4">
+            {% endfor %}
 
-        </video>
+          </video>
+        </div>
       </div>
     </div>
 
-    <div class="mt-5 col-md-6 col-sm-5" data-aos="fade-in" data-aos-offset="300" data-aos-easing="ease-in-sine">
+    <div class="mt-5 col-md-12 col-lg-6 col-sm-5 col-12" data-aos="fade-in" data-aos-offset="300" data-aos-easing="ease-in-sine">
       <div class="row">
         <div class="col-12 justifyy" style="justify-content: center;">
-          <h2 class="font-merryweather1">DEG N DEV</h2>
-          <p class="font-bebas-lg" style="justify-content: center;"><span class="pl-5">D</span>esign and Developer is a well managed site that helps you from the very begining stage to the deploy stage of Website and App-development.
-            <br> Also we design any type of graphics designing item.such as: Logo Desgining, Business card, Flyers, Brochures, Bill boards, etc.
-            <br> Our well-disciplined and reliable team is here to provide their skilled and knowledge to get the satisfaction of the customers.</p>
+          <h2 class="font-merryweather1 px-5 py-3">DEG N DEV</h2>
+          <p class="font-bebas-md px-5  py-2" style="justify-content: center;"><span class="pl-5">D</span>esign and Developer is a well managed site that helps you from the very begining stage to the deploy stage of Website and App-development.
+            <br><br> Also we design any type of graphics designing item.such as: Logo Desgining, Business card, Flyers, Brochures, Bill boards, etc.
+            <br><br> Our well-disciplined and reliable team is here to provide their skilled and knowledge to get the satisfaction of the customers.</p>
         </div>
       </div>
     </div>

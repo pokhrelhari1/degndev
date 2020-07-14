@@ -1,9 +1,10 @@
-#header{
-  background: linear-gradient(135deg, #bccbde, #c2dde6);
-  color:black;
+#header {
+    background: linear-gradient(-315deg, #FAEBEFFF 50%, #fdfce9 );
+    color: black;
 }
 
-#header a:link, #header a:visited {
+#header a:link,
+#header a:visited {
     color: black;
     text-decoration: none;
 }
