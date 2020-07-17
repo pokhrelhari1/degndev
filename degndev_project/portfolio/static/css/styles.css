@@ -376,7 +376,7 @@ header .overlay {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(260deg, #FAEBEFFF 50%, #fdfce9 ), url('../media/5.jpg') no-repeat fixed;
+    background: linear-gradient(260deg, #FAEBEFFF 50%, #fdfce9 );
     background-blend-mode: overlay;
 }
 
@@ -859,6 +859,9 @@ button {
     border-bottom: 1px solid black;
     border-radius: 0rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    /* form control */
+    display: block;
+
 }
 
 .btn-success:hover {

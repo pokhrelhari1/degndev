@@ -22,12 +22,16 @@ from portfolio import views
 from logofolio import views
 from webfolio import views
 from appfolio import views
+from contact import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', portfolio.views.home, name='home'),
+    path('home/', portfolio.views.home, name='home'),
     path('logo/', include('logofolio.urls')),
     path('web/', include('webfolio.urls')),
     path('app/', include('appfolio.urls')),
+    path('contact/', include('contact.urls')),
+
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

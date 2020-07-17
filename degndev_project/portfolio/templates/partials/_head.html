@@ -2,6 +2,15 @@
 
 <div id="main"></div>
 <header>
+  <div>
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert {{ message.tags }} m-2" id="msg" role="alert">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+  </div>
   <div class="parallax overlay">
     <div class="mt-5">
       <p class="color-black font-merryweather ml3  animate__animated animate__bounceInDown">Welcome to DEG n DEV</p>

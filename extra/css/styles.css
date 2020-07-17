@@ -131,7 +131,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-    background:  #0c9;
+    background: lightskyblue;
     border-radius: 30px;
     box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, .25), inset -2px -2px 2px rgba(0, 0, 0, .25);
 }
@@ -206,11 +206,11 @@ nav.navbar.transparent {
   }
 
   .navbar-inverse {
-    background: linear-gradient(-315deg, #FAEBEFFF 50%, #fdfce9);
+    background: linear-gradient(-315deg, #FAEBEFFF 50%, #fdfce9 );
   }
 
   nav.navbar.transparent {
-    background: linear-gradient(-315deg, #FAEBEFFF 50%, #fdfce9);
+    background: linear-gradient(-315deg, #FAEBEFFF 50%, #fdfce9 );
     border-color: #080808;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
   }
@@ -261,6 +261,7 @@ header {
     background-size: cover;
     opacity: 1;
     max-height: 850px;
+    background-blend-mode: overlay;
 }
 
 @media only screen and (max-device-width: 1366px) {
@@ -301,8 +302,6 @@ header .overlay {
 .aboutus {
     text-align: center;
 }
-
-
 /* about us end */
 /* ================================================================================= */
 /* 9 =================================================================================== */
@@ -322,7 +321,7 @@ header .overlay {
 }
 
 .vid {
-    border: 6px solid lightpink;
+    border: 6px solid #c9d6fa;
     /* background: #c9d6fa; */
     border-radius: 20px;
     display: inline-block;
@@ -339,10 +338,7 @@ header .overlay {
     position: absolute;
     width: 100%;
     height: 100%;
-    /* background: linear-gradient(45deg, #bccbde 50%, #c2dde6 50%); */
     background: linear-gradient(315deg, #FAEBEFFF 50%, #fdfce9 );
-    /* url('../media/5.jpg') no-repeat fixed; */
-    /* background-blend-mode: overlay; */
     opacity: inherit;
 }
 
@@ -376,7 +372,7 @@ header .overlay {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(260deg, #FAEBEFFF 50%, #fdfce9 ), url('../media/5.jpg') no-repeat fixed;
+    background: linear-gradient(260deg, #FAEBEFFF 50%, #fdfce9 );
     background-blend-mode: overlay;
 }
 

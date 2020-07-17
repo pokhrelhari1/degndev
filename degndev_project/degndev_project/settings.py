@@ -42,7 +42,9 @@ INSTALLED_APPS = [
     'logofolio.apps.LogofolioConfig',
     'appfolio.apps.AppfolioConfig',
     'webfolio.apps.WebfolioConfig',
+    'contact.apps.ContactConfig',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -131,3 +133,22 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = '/media/'
+
+
+#messages
+from django.contrib.messages import constants as messages
+
+MESSAGE_TAGS = {
+    messages.DEBUG: 'alert-info',
+    messages.INFO: 'alert-info',
+    messages.SUCCESS: 'alert-success',
+    messages.WARNING: 'alert-warning',
+    messages.ERROR: 'alert-danger',
+}
+
+#Email Configuration
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = '587'
+EMAIL_HOST_USER='degndev@gmail.com'
+EMAIL_HOST_PASSWORD='@bc$123456'
+EMAIL_USE_TLS=True

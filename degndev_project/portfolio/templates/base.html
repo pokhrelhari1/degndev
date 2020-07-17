@@ -13,118 +13,137 @@
 </head>
 
 
-  <body>
+<body>
 
-    <!-- head file -->
-    {% include 'partials/_head.html' %}
+  {% include 'portfolio/messages.html' %}
 
-    <!-- navbar file -->
-    {% include 'partials/_navbar.html' %}
-
-    <!-- about us file -->
-    {% include 'portfolio/aboutus.html' %}
-
-    <!-- services file -->
-    {% include 'portfolio/services.html' %}
-
-     <!-- main/ home  file -->
-    {% block content %} {% endblock %}
-
-    <!-- portfolio file -->
-    {% include 'portfolio/portfolio.html' %}
-
-    <!-- pricing file -->
-    {% include 'portfolio/pricing.html' %}
-
-    <!-- team file -->
-    {% include 'portfolio/team.html' %}
-
-    <!-- contact file -->
-    {% include 'portfolio/contact.html' %}
+  <!-- head file -->
+  {% include 'partials/_head.html' %}
 
 
-    <!-- footer file -->
-    {% include 'partials/_footer.html' %}
+  <!-- navbar file -->
+  {% include 'partials/_navbar.html' %}
+
+
+  <!-- about us file -->
+  {% include 'portfolio/aboutus.html' %}
+
+  <!-- services file -->
+  {% include 'portfolio/services.html' %}
+
+  <!-- main/ home  file -->
+  {% block content %} {% endblock %}
+
+  <!-- portfolio file -->
+  {% include 'portfolio/portfolio.html' %}
+
+  <!-- pricing file -->
+  {% include 'portfolio/pricing.html' %}
+
+  <!-- team file -->
+  {% include 'portfolio/team.html' %}
+
+  <!-- contact file -->
+  {% include 'portfolio/contact.html' %}
+
+
+  <!-- {% include 'contact/contact.html' %} -->
+
+
+  <!-- footer file -->
+  {% include 'partials/_footer.html' %}
 
 
 
-    <script src="{% static 'js/script.js' %}"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="{% static 'js/jquery.hoverplay.js' %}"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script type="text/javascript">
-      $('.js-scroll-trigger').click(function() {
-        $('.navbar-collapse').collapse('hide');
+  <script src="{% static 'js/script.js' %}"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="{% static 'js/jquery.hoverplay.js' %}"></script>
+  <script src = "{% static 'js/validator.js' %}" >
+
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $('.js-scroll-trigger').click(function() {
+      $('.navbar-collapse').collapse('hide');
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script type="text/javascript">
+    // Wrap every letter in a span
+    var textWrapper = document.querySelector('.ml31 .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({
+        loop: true
+      })
+      .add({
+        targets: '.ml31 .line',
+        scaleY: [0, 1],
+        opacity: [0.5, 1],
+        easing: "easeOutExpo",
+        duration: 700
+      })
+      .add({
+        targets: '.ml31 .line',
+        translateX: [0, document.querySelector('.ml31 .letters').getBoundingClientRect().width + 10],
+        easing: "easeOutExpo",
+        duration: 700,
+        delay: 100
+      }).add({
+        targets: '.ml31 .letter',
+        opacity: [0, 1],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=775',
+        delay: (el, i) => 34 * (i + 1)
+      }).add({
+        targets: '.ml31',
+        opacity: 0,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
       });
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script type="text/javascript">
-      // Wrap every letter in a span
-      var textWrapper = document.querySelector('.ml31 .letters');
-      textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+  </script>
 
-      anime.timeline({
-          loop: true
-        })
-        .add({
-          targets: '.ml31 .line',
-          scaleY: [0, 1],
-          opacity: [0.5, 1],
-          easing: "easeOutExpo",
-          duration: 700
-        })
-        .add({
-          targets: '.ml31 .line',
-          translateX: [0, document.querySelector('.ml31 .letters').getBoundingClientRect().width + 10],
-          easing: "easeOutExpo",
-          duration: 700,
-          delay: 100
-        }).add({
-          targets: '.ml31 .letter',
-          opacity: [0, 1],
-          easing: "easeOutExpo",
-          duration: 600,
-          offset: '-=775',
-          delay: (el, i) => 34 * (i + 1)
-        }).add({
-          targets: '.ml31',
-          opacity: 0,
-          duration: 1000,
-          easing: "easeOutExpo",
-          delay: 1000
-        });
-    </script>
+  <script>
+    $(window).scroll(function() {
+      if ($(document).scrollTop() > 600) {
+        $('nav').addClass('transparent');
+      } else {
+        $('nav').removeClass('transparent');
+      }
+    });
+  </script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script> -->
+  <script src="{% static 'js/aos.js' %}"></script>
 
-    <script>
-      $(window).scroll(function() {
-        if ($(document).scrollTop() > 600) {
-          $('nav').addClass('transparent');
-        } else {
-          $('nav').removeClass('transparent');
-        }
-      });
-    </script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script> -->
-    <script src="{% static 'js/aos.js' %}"></script>
+  <script type="text/javascript">
+    AOS.init();
+  </script>
 
-    <script type="text/javascript">
-      AOS.init();
-    </script>
-
-    <script type="text/javascript">
+  <script type="text/javascript">
     function fillsquare(area, square) {
-         var area = area;
-         var square = square;
+      var area = area;
+      var square = square;
 
-         document.getElementById("package").value = area;
-         document.getElementById("plan").value = square;
-       }
+      document.getElementById("package").value = area;
+      document.getElementById("plan").value = square;
+    }
+  </script>
+
+  <script>
+    setTimeout(function() {
+      if ($('#msg').length > 0) {
+        $('#msg').remove();
+      }
+    }, 12000)
+  </script>
 
 
-    </script>
 
-  </body>
+</body>
+
 </html>
