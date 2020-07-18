@@ -86,7 +86,7 @@
                     <!--Grid row-->
                     <div class="row">
                       <div class="col-md-6">
-                        <div class="md-form mb-0 mt-3">
+                        <div class="md-form mb-0 mt-3 pb-3">
                           <div class="form-group">
                             <select class="form-control1" name="package" id="package">
                               <option value=" ">Select Package</option>
@@ -95,12 +95,12 @@
                               <option value="Graphics">Graphics Design</option>
                             </select>
                             <!-- <p class="help-block text-danger"></p> -->
-                              <h5 id="packagecheck"> </h5>
+                              <p id="packagecheck"> </p>
                           </div>
                         </div>
                       </div>
                       <div class="col-md-6">
-                        <div class="md-form mb-0 mt-3">
+                        <div class="md-form mb-0 mt-3 pb-3">
                           <div class="form-group">
                             <select class="form-control1" name="plan" id="plan">
                               <option value=" ">Select Plan</option>
@@ -109,7 +109,7 @@
                               <option value="Platinum">Platinum</option>
                               <!-- <p class="help-block text-danger"></p> -->
                             </select>
-                              <h5 id="plancheck"> </h5>
+                              <p id="plancheck"> </p>
                           </div>
 
                         </div>
@@ -126,7 +126,7 @@
                           <div class="form-group">
                             <textarea type="text" id="message" name="message" rows="2" class="form-control1 md-textarea"></textarea>
                             <label for="message">Your message</label>
-                            <h5 id="messagecheck"> </h5>
+                            <p id="messagecheck"> </p>
                           </div>
                         </div>
                       </div>
@@ -136,8 +136,10 @@
                   </form>
                   <div class="status pb-2" style="color:red; text-align:center;"></div>
                   <div class="text-center text-md-center">
-                    <!-- <input class="btn4 mt-2 mx-3" type="submit" name="button" value="Send" onclick="validateForm()" onclick="document.getElementById('contact-form').submit();"> -->
-                    <a> <input type="submit" name="" id="submitbtn" value="Submit" class="btn btn-success"></a>
+
+                    <!-- <input type="submit" name="" id="submitbtn" value="Submit" class="btn btn-success"> -->
+
+                    <a><button class="btn4 mt-2 mx-3" type="submit" id="submitbtn" name="button">SEND</button></a>
                     <a><button class="btn5 mt-2 mx-3" type="button" name="button" onclick="document.getElementById('contact-form').reset();">CLEAR</button></a>
                   </div>
                   <!-- <div class="status" style="color:red;"></div> -->
@@ -146,7 +148,7 @@
 
                 <!--Grid column-->
                 <div class="col-md-3 text-center">
-                  <ul class="list-unstyled mb-0">
+                  <ul class="list-unstyled mb-0 mt-5">
                     <li><i class="fa fa-map fa-lg"></i>
                       <p class="font1 font-bebas">Kathmandu 44600, NEPAL</p>
                     </li>
@@ -197,7 +199,7 @@
 
           if (name_val.length == '') {
             $('#namecheck').show();
-            $('#namecheck').html("**Please Fill the username");
+            $('#namecheck').html("*Please Fill the username");
             $('#namecheck').focus();
             $('#namecheck').css("color", "red");
             name_err = false;
@@ -207,9 +209,9 @@
             $('#namecheck').hide();
           }
 
-          if ((name_val.length < 3) || (name_val.length > 20)) {
+          if (name_val.length < 3) {
             $('#namecheck').show();
-            $('#namecheck').html("**Username length must be between 3 and 10");
+            $('#namecheck').html("*Name should be greater than 3");
             $('#namecheck').focus();
             $('#namecheck').css("color", "red");
             name_err = false;
@@ -232,7 +234,7 @@
 
           if (email_val.length == '') {
             $('#emailcheck').show();
-            $('#emailcheck').html("**Please Enter Valid Email");
+            $('#emailcheck').html("*Please Enter Valid Email");
             $('#emailcheck').focus();
             $('#emailcheck').css("color", "red");
             email_err = false;
@@ -242,10 +244,10 @@
             $('#emailcheck').hide();
           }
 
-
-            if ((email_val.length < 3) || (email_val.length > 30)) {
+            var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            if (!re.test(email_val)) {
             $('#emailcheck').show();
-            $('#emailcheck').html("**Invalid Email");
+            $('#emailcheck').html("*Invalid Email");
             $('#emailcheck').focus();
             $('#emailcheck').css("color", "red");
             email_err = false;
@@ -269,7 +271,7 @@
 
           if (subject_val.length == '') {
             $('#subjectcheck').show();
-            $('#subjectcheck').html("**Please Enter Subject");
+            $('#subjectcheck').html("*Please Enter Subject");
             $('#subjectcheck').focus();
             $('#subjectcheck').css("color", "red");
             subject_err = false;
@@ -280,9 +282,9 @@
           }
 
 
-            if ((subject_val.length < 3) || (subject_val.length > 10)) {
+            if (subject_val.length < 3){
             $('#subjectcheck').show();
-            $('#subjectcheck').html("**Subject length must be between 3 and 10");
+            $('#subjectcheck').html("*Subject length must be between 3");
             $('#subjectcheck').focus();
             $('#subjectcheck').css("color", "red");
             subject_err = false;
@@ -294,40 +296,6 @@
 
         }
 
-        $('#subject').keyup(function() {
-          subject_check();
-        });
-
-        function subject_check() {
-
-          var subject_val = $('#subject').val();
-
-          if (subject_val.length == '') {
-            $('#subjectcheck').show();
-            $('#subjectcheck').html("**Please Enter Subject");
-            $('#subjectcheck').focus();
-            $('#subjectcheck').css("color", "red");
-            subject_err = false;
-            return false;
-
-          } else {
-            $('#subjectcheck').hide();
-          }
-
-
-            if ((subject_val.length < 3) || (subject_val.length > 10)) {
-            $('#subjectcheck').show();
-            $('#subjectcheck').html("**Subject length must be between 3 and 10");
-            $('#subjectcheck').focus();
-            $('#subjectcheck').css("color", "red");
-            subject_err = false;
-            return false;
-
-          } else {
-            $('#subjectcheck').hide();
-          }
-
-        }
 
         //message
         $('#message').keyup(function() {
@@ -340,7 +308,7 @@
 
           if (message_val.length == '') {
             $('#messagecheck').show();
-            $('#messagecheck').html("**Please Enter Message");
+            $('#messagecheck').html("*Please Enter Message");
             $('#messagecheck').focus();
             $('#messagecheck').css("color", "red");
             message_err = false;
@@ -351,9 +319,9 @@
           }
 
 
-            if ((message_val.length < 3) || (message_val.length > 10)) {
+            if (message_val.length < 3) {
             $('#messagecheck').show();
-            $('#messagecheck').html("**Message length must be between 3 and 10");
+            $('#messagecheck').html("*Message length must be greater than 3");
             $('#messagecheck').focus();
             $('#messagecheck').css("color", "red");
             message_err = false;

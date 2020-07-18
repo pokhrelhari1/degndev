@@ -12,5 +12,5 @@ urlpatterns = [
     path('logo/', include('logofolio.urls')),
     path('web/', include('webfolio.urls')),
     path('app/', include('appfolio.urls')),
-
+    
 ]

@@ -321,7 +321,7 @@ header .overlay {
 }
 
 .vid {
-    border: 6px solid #c9d6fa;
+    border: 6px solid lightpink;
     /* background: #c9d6fa; */
     border-radius: 20px;
     display: inline-block;
