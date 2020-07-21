@@ -2,7 +2,7 @@
 
 <div id="main"></div>
 <header>
-  <div>
+  <div class="fixed-top mt-sm-1 py-5">
     {% if messages %}
         {% for message in messages %}
             <div class="alert {{ message.tags }} m-2" id="msg" role="alert">
@@ -21,8 +21,8 @@
 
     </div>
     <div>
-      <a href="#aboutusnav"><button class="btn1 mt-3 mx-3 animate__animated animate__bounceInUp" type="button" name="button">GET STARTED</button></a>
-      <button class="btn2 mt-3 mx-3 animate__animated animate__bounceInDown" type="button" data-toggle="modal" data-target="#contact" name="button">CONTACT US</button>
+      <a href="#aboutusnav"><button class="btn2 mt-3 mx-3 animate__animated animate__bounceInUp" type="button" name="button">GET STARTED</button></a>
+      <button class="btn1 mt-3 mx-3 animate__animated animate__bounceInDown" type="button" data-toggle="modal" data-target="#contact" name="button">CONTACT US</button>
       <!--yesma onclick="openNav1()"-->
     </div>
   </div>
